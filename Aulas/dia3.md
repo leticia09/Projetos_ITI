@@ -44,6 +44,7 @@ Pode existir vários <header> dentro de uma página, exemplo: para fazer o cabe�
 
 - <aside></aside>: Conter conteúdos relacionados ao conteúdo principal, ex: barras laterais, citações, propagandas etc.. Esse é o conteúdo que se tirado da página, não faz falta no sentido do conteúdo principal. 
 
+- <footer></footer>: "rodapé", utiliza-se para colocar conteúdos como: direitos autorais, informações e etc.
 
 
 
