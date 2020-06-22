@@ -38,6 +38,27 @@
 `<p class="um">Estou repetindo o mesmo id no mesmo documento dentro deste parágrafo</p>`
 `CSS: .um{font-size:18px;}`
 
+#### Seletor a + pseudo-classe "hover": 
+> É usado em hiperlinks para aplicar um estilo quando o usuário passa o mouse sobre o elemento, como por exemplo, mudar a cor. Ex: `HTML: <a href= "pag-de-destino.html>Página de destino</a>`
+`CSS: a{color:blue;}`
+`a:hover {color:red;}`
+> O seletor "a" deixa o link azul, se passar o mouse por cima do link, ele ficará vermelho. *OBS: Esse efeito também acontecerá quando você preferir usa id ou class no lugar do seletor do tipo "a". Ex: `HTML usando id: <a href= "pag.html" id="link_id>Página de destinp</a>`
+`CSS: #link_id {color:blue;}`
+`#link_id:hover {color:red;}` 
+
+`HTML usando class: <a href= "pag.html" class="link_class>Página de destinp</a>`
+`CSS: #link_class {color:blue;}`
+`#link_class:hover {color:red;}`
+
+#### Seletor Universal:
+> Representado pelo "*" e se aplica a todos os elementos de uma página. Geralmente usado para "resetar" propriedades aplicadas automaticamente pelos navegadores e tem a liberdade de definir as regras sem interferência dos navegadores. As duas propriedades usadas que os navegadores influênciam na aparência "são margin" e "padding". Para impedir que isso aconteça basta aplicar a sintaxe abaixo: 
+                  *{
+                    margin:0
+                    padding:0;
+                    }
+
+
+
 ### Prioridade:
 > É a característica que será estilizada de um elemento HTML, no CSS. Ex: font, color, background, etc.
 
