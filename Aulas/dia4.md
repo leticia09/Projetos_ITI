@@ -18,6 +18,7 @@
 
 #### Seletor:
 > É o elemento HTML identificado por seu nome classe, ID, etc; e para qual a regra será aplicada. O seletor funciona como um "alvo". Eu aponto para o CSS qual a tag ele aplicará o estilo que determinei, na regra CSS. 
+
 > Tipos de seletores: **exixtem mais tipos além dos que são descritos abaixo**
 * Seletor de tipo;
 * Seletor de id;
