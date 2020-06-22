@@ -11,7 +11,9 @@
 ## Sintaxe CSS
 
 > O CSS tem a sua própria sintaxe e estrutura. Uma regra CSS é composta por um seletor, uma propriedade e um valor. EX:
-`seletor {propriedade: valor;}`  
+```css
+seletor {propriedade: valor;}  
+```
 - Abrimos e fechamos {};
 - Dentro da chaves determinamos a propriedade e o valor;
 - Caso precise aplicar mais de uma declaração (propriedade+valor) utilizamos ponto e vírgula(;) após o valor, para separá-las.
