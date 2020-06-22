@@ -43,7 +43,8 @@ como ele deve ser apresentado. Informa ao navegador sobre que tipo de informaç�
 > **OBS: Elementos nulos (vazios/ void)**  
 > São marcações que só possuem tag de abertura, têm um fechamento automático. Essas tags não podem conter texto ou elementos animados dentro deles, já que não possuem tags de fechamento. Ex: tag de input (formulário)
 > `<input>`
->**tags de elementos nulos:**
+
+> **Tags de elementos nulos:**
 > - area;
 > - base;
 > - br;
