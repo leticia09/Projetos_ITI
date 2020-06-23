@@ -18,7 +18,7 @@ navegador (cor, sombra, efeito no mouse...). Forma
 **FRAMEWORKS JS:** AngularJS e Angular.  
 **Pré-processadores CSS:** Sass e Less (ferramentas que otimizam o CSS). Gera um CSS.
 
-## HTML (HyperText Mark-up Languege ou Linguagem de marcação de hipertexto)
+## HTML (HyperText Mark-up Language ou Linguagem de marcação de hipertexto)
 
 - Inventado em 1990 por Tim Berners-Lee (físico britânico).
 - Linguagem mãe da web. Tudo que vemos na web é html
