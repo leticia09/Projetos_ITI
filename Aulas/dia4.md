@@ -119,4 +119,6 @@ h2{font-size: 14px}
 - h2 = seletor;
 - font-size = propriedade;
 - 14px = valor;
+>  Comentários
+> - Para inserir um comentário no código é bem simples. Ex:` <!--comentário-->`
 
