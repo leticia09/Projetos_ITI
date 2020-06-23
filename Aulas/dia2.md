@@ -22,14 +22,18 @@
 ```
 - **Tag br:** `<br>` Quebra linha no texto. Ex:
 ```html
-<p><strong> ipsum dolor sit amet consectetur adipisicing elit.</strong> Doloremque accusantium incidunt alias quam vitae aque<br> impedit iste amet
-Obs: pode colocar mais de uma tag <br> para quebrar mais de uma linha do mesmo texto.</p>
+<p>
+    <strong>ipsum dolor sit amet consectetur adipisicing elit.</strong>
+    Doloremque accusantium incidunt alias quam vitae aque<br> 
+    impedit iste amet Obs: pode colocar mais de uma tag <br> 
+    para quebrar mais de uma linha do mesmo texto.
+</p>
 ```
 ## Tags de lista:
 
 - **Ordenada:** `<ol>`= Começa uma lista ordenada `<li>`= item da lista ordenada. Ex:
 
-    ```
+    ```html
     <ol>
         <li>Item 01</li>
         <li>Item 02</li>
@@ -39,7 +43,7 @@ Obs: pode colocar mais de uma tag <br> para quebrar mais de uma linha do mesmo t
     ```
     
 	
-- **Não ordenada:** `<ul>`= Começa uma lista não ordenada `<li>`= item da lista ordenada. Ex:
+- **Não ordenada:** `<ul>`= Começa uma lista não ordenada `<li>`= item da lista não ordenada. Ex:
 ```html
     <ul>
         <li>Item 01</li>
