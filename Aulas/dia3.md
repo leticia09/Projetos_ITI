@@ -12,26 +12,40 @@
 
 - **Link interno:** link para navegar entre as seções da página. Isso é possível através de id´s (identificadores). Quando vocÊ clica no link, ele vai direto para a parte da página, como se fosse uma âncora.Ex:
 ```html
-  <div>
-        <h1 class="style">Titulo 01</h1>
+<div>
+    <h1 class="style">Titulo 01</h1>
 
-        <p></p>
+    <p></p>
 
-        <ol>
-            <li><a href="">Item 01 de link</a> </li>
+    <ol>
+        <li><a href="">Item 01 de link</a> </li>
+        <li>Item 02</li>
+        <li>
+            <a href="#logo_itipng">
+                Item 03 com âncora
+            </a>
+        </li> <!--Quando clica nesse link, a página rola para o item 4-->
+        <li>Item 04</li>
+    </ol>   
+</div>
+
+<div>
+    <h3 id="logo_iti.png">Titulo 05</h1>
+    <ul>
+            <li>
+                <a>
+                    Item 01 de link
+                </a>
+            </li>
             <li>Item 02</li>
-            <li><a href="#logo_itipng">Item 03 com âncora</a></li> -> Quando clica nesse link, a página rola para o item 4
-            <li>Item 04</li>
-         </ol>   
-    </div>
- 
- <h3 id="logo_iti.png">Titulo 05</h1>
- <ul>
-                <li>Item 01 de link</a> </li>
-                <li>Item 02</li>
-                <li>Item 03</li>
-                <li><a href="#logo_iti.png"></a>Item 04</li>
-            </ul>
+            <li>Item 03</li>
+            <li>
+                <a href="#logo_iti.png">
+                   Item 04 
+                </a>
+            </li>
+    </ul>
+</div>
 ```
 
 ## Tags principais do HTML5
