@@ -2,23 +2,23 @@
 
 - **Tag strong:** `<strong>` ou `<b>` (caiu em desuso) mostrar trecho importante do texto (aparece em negrito). Ex:
 ```html
-<p><strong> ipsum dolor sit amet consectetur adipisicing elit.</strong> zdhuchuchIP<\p>
+<p><strong> ipsum dolor sit amet consectetur adipisicing elit.</strong> zdhuchuchIP</p>
 ```
 - **Tag em:** `<em>` ou `<i>` significa itálico Da ênfase, fica tipo itálico, é usado para citações, trechos e etc. Ex: 
 ```html
-<p><em> ipsum dolor sit amet consectetur adipisicing elit. Mollitia nemo tempora ad.</em>
+<p><em> ipsum dolor sit amet consectetur adipisicing elit. Mollitia nemo tempora ad.</em></p>
 ```
 - **Tag u:** `<u>` Deixa sublinhado. Ex:
 ```html
-p><em> ipsum dolor sit amet consectetur adipisicing elit. Mollitia nemo tempora ad.</em> Vel laboriosam provident
+<p><em> ipsum dolor sit amet consectetur adipisicing elit. Mollitia nemo tempora ad.</em> Vel laboriosam provident</p>
 ```
 ```html
 <u> Facilis fugiat magni quidem in, nihil assumenda repellendus</u> ducimus officiis quas? Totam, saepe quos?
 ```
 
-- **Tag span:** `<span> `modifica partes específicas do texto. Ex: 
+- **Tag span:** `<span>`modifica partes específicas do texto. Ex: 
 ```html
-<span> "style"
+<span>"style"</span>
 ```
 - **Tag br:** `<br>` Quebra linha no texto. Ex:
 ```html
