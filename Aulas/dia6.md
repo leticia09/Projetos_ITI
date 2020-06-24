@@ -42,9 +42,9 @@ text-indent: 60px;
 ```
 
 # Seletores CSS
-- É o HTML antes do CSS. Quando colocamos as regras CSS dentro da `<div>`, aquelas regras iram valer para todos os "containers" `<div>` , a mesma regra vale para o `<p>` `<h>` e todas as outras TAGs.
+- É o HTML antes do CSS. Quando colocamos as regras CSS dentro da `<div>`, aquelas regras irão valer para todos os "containers" `<div>` , a mesma regra vale para o `<p>` `<h>` e todas as outras TAGs.
 
-- **Seletor Universal:** Elimina as regras CSS que é padrão para o navegador. A declaração dela está no documento do dia 6.
+- **Seletor Universal:** Elimina as regras CSS que é padrão para o navegador e atribuir uma caracterísitica a todos os elementos da página. A declaração dela está no documento do dia 6.
 
 
 - **Seletor Identidicador:** O id é escrito dentro da TAG. "marca a TAG com um nome próprio". Ex:
