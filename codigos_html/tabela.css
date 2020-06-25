@@ -17,6 +17,12 @@ table{
 tr{
     background-color: white;
 }
+
 td{
     border: none;
+    box-sizing: content-box;
+}
+
+tr:nth-child(odd){
+    background-color: #ECEFF1;
 }

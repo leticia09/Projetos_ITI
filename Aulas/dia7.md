@@ -9,22 +9,22 @@ div h1 {
         }
 ```
 
-- **Seletor adjacente:** (herança tipo filho) Span é ancestral, neto de `<div>`. Ex:
+- **Seletor adjacente:** (herança tipo filho) div é ancestral de, neto de `<div>`. Ex:
 ```css
 div > span {
             color: red;
         }
 ```
-> OBS: Para selecionar as títulos que iram mudar é necessário usar a herança. Ex:
+> OBS: Para selecionar as títulos que irão mudar é necessário usar a herança. Ex:
 ```css
 h1+h2 {
             color: seagreen;
             font-size: 30px;
         }
 ```
-- Dessa forma, apenas os primeiros título 1 e título 2 estaram com as regras CSS.
+- Dessa forma, apenas os primeiros "título 1" e "título 2" estaram com as regras CSS.
 
-- Para que todos os títulos sejam transformados pelas regras CSS, é só colocar um "~" no lugar do "+". Ex:
+- Para que todos os "títulos" sejam transformados pelas regras CSS, é só colocar um "~" no lugar do "+". Ex:
 ```css
 h1~h2 {
             color: seagreen;
@@ -43,6 +43,7 @@ h1~h2 {
 ```html
 <h2><a href="#">Titulo 02</a></h1>
 ```
+> OBS: Essa pseudo-classe `link`, neste caso, não é necessária.
 
 - **Visited:** Utiliza-se o seletor do tipo "a", que se refere ao estado final do link (link já clicado) .Ex:
 ```css
@@ -72,7 +73,7 @@ a:visited {
 
 - **Estruturais:** Utiliza-se o seletor do tipo "a", e existem 4 tipos, a `first-child` (em lista, modifica o primeiro item), `last-child` (em lista, modifica o último item), `nth-child` (em lista, modifica de cima pra baixo o item selecionado),`last-nth-child` (em lista, modifica de baixo pra cima o item selecionado). Ex:
 ```css
-  li:first-child{
+         li:first-child{
             font-size: 2em;
             color: mediumseagreen;
         }
