@@ -5,46 +5,111 @@
     <title>Seletores CSS</title>
     <meta charset="utf-8">
     <style>
-        *{
+        * {
             font-size: 15px;
             margin: 0;
             padding: 0;
         }
 
-        #Logo_iti{
+        #Logo_iti {
             font-size: 25px;
         }
-        .estilo_testo01{
+
+        .estilo_testo01 {
             color: darksalmon;
-            font-size: 40px;
+            font-size: 50px;
             font-family: Arial, Helvetica, sans-serif;
         }
+
+        div h1 {
+            color: rebeccapurple;
+            font-size: 50px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        div h1 span {
+            color: red;
+            font-size: 50px;
+        }
+
+        h1+h2 {
+            color: seagreen;
+            font-size: 50px;
+        }
+
+        a:link {
+            color: orange;
+        }
+
+        a:visited {
+            color: black;
+        }
+
+        a:hover {
+            font-size: 1.2em;
+        }
+
+        a:active {
+            color: chartreuse;
+        }
+
+        a:focus {
+            border: 4px solid greenyellow;
+        }
+        
+        li:first-child{
+            font-size: 2em;
+            color: mediumseagreen;
+        }
+
+        li:last-child{
+            font-size: 2em;
+            color: hotpink;
+        }
+        /* li:nth-child(2){
+            font-size: 6em;
+            color: slategray;
+        }
+        
+        li:nth-last-child(3){
+            font-size: 8em;
+            color: tomato;
+        } */
 
 
     </style>
 </head>
 
 <body>
+
     <div>
-        <h1>Titulo 01</h1>
+        <h1><a href="#">Titulo 00</a></h1>
+        <h2>Titulo 01</h1>
+            <h2>Titulo 03</h1>
 
-        <p> ipsum dolor sit amet consectetur adipisicing elit. Doloremque accusantium incidunt alias
-            quam vitae
-            eaque<br></p>
-        <p></p> impedit iste amet fuga cumque, asperiores dolor, quia sequi sed eligendi dolorum voluptatum
-        natus?</p>
+                <p> ipsum dolor sit amet consectetur adipisicing elit. Doloremque accusantium incidunt alias
+                    quam vitae <span> My family lives in a small house. It’s simple but pretty. <br> has a large garden.
+                        I like to</span> work in the garden but my sister hates to work in the garden. <br>
+                    she prefers to read.
+                    She reads in the morning, in the afternoon and at night
+                    eaque<br></p>
+                <p></p> impedit iste amet fuga cumque, asperiores dolor, quia sequi sed eligendi dolorum voluptatum
+                natus?</p>
 
-        <ol>
-            <li>Item 01</li>
-            <li>Item 02</li>
-            <li>Item 03 com âncora</li>
-            <li>Item 04</li>
-        </ol>
+                <ol>
+                    <li>Item 01</li>
+                    <li>Item 02</li>
+                    <li>Item 03 com âncora</li>
+                    <li>Item 04</li>
+                </ol>
     </div>
     <div>
         <h1 class="estilo_testo01">Titulo 02</h1>
 
-        <p> ipsum dolor sit amet consectetur adipisicing elit. Doloremque accusantium incidunt alias
+        <p> ipsum dolor My family always eats
+            <br>breakfast and dinner together. We talk.
+            <br>We laugh. Then my sister washes the dishessit amet consectetur adipisicing elit.
+            <br> Doloremque accusantium incidunt alias
             quam vitae
             eaque<br></p>
         <p></p> impedit iste amet fuga cumque, asperiores dolor, quia sequi sed eligendi dolorum voluptatum

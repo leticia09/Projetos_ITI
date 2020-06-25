@@ -1,0 +1,22 @@
+*{
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+body {
+
+    background-color: #ECEFF1;
+    text-align: center;
+}
+table{
+    margin: auto; /*centraliza o elemento */
+    width: 800px; /*comprimeto*/
+
+}
+
+tr{
+    background-color: white;
+}
+td{
+    border: none;
+}
