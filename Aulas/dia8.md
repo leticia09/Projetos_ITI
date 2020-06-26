@@ -1,6 +1,6 @@
 ## Propriedades CSS
 
-- **Box sizin:** Quando é necessário fazer um container, ditamos as regras CSS para altura, largura, comprimento, bordas e etc; Apesar de ditarmos todas as medidas, é necessário acrescentar o `box-sizing`, pois ele garante que as medidas serão respeitadas. Ex:
+- **Box sizing:** Quando é necessário fazer um container, ditamos as regras CSS para altura, largura, comprimento, bordas e etc; Apesar de ditarmos todas as medidas, é necessário acrescentar o `box-sizing`, pois ele garante que as medidas serão respeitadas. Ex:
 ```css
 #container{
     width: 500px;
