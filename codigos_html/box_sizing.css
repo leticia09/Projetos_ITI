@@ -1,0 +1,26 @@
+#container{
+    width: 600px;
+    height: 700px;
+    padding: 40px;
+    border: 2px solid blue;
+    margin: 30px;
+    box-sizing: border-box;
+    top: 5px;
+    left: 400px;
+    bottom: 0;
+    right: 0;
+    position: relative;
+}
+
+span{
+    background: goldenrod;
+    display: block;
+}
+
+li{
+    background: greenyellow;
+    border: 2px solid royalblue;
+    padding: 30px;  /*espaço entre os itens */
+    display: inline-block;
+
+}
