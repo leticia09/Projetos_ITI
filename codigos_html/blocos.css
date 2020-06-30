@@ -2,7 +2,7 @@
     /* position: absolute; */
     width: 400px;
     height: 400px;
-    font: bold 2em/8 sans-serif;
+    font: bold 2em 1.25 sans-serif;
     text-align: center;
     color: black;
     padding: 20px;
@@ -47,7 +47,7 @@ p{
     top: 0; 
     clear: left; 
     overflow: auto*/
-    border-radius: 20px;
+    border-radius: 120px/50px
 }
 
 #bloco05 p{
