@@ -14,7 +14,7 @@
 
 span{
     background: goldenrod;
-    display: block;
+    display: inline-block;
 }
 
 li{

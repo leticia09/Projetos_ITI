@@ -1,25 +1,22 @@
 #bloco01, #bloco02, #bloco03, #bloco04{
     /* position: absolute; */
-    width: 200px;
-    height: 200px;
-    font: bold 1em/4 sans-serif;
+    width: 400px;
+    height: 400px;
+    font: bold 2em/8 sans-serif;
     text-align: center;
     color: black;
-    margin-bottom: 30px;
+    padding: 20px;
+    margin-bottom: 60px;
     float: left; */
 
 }
 p{
     color: black;
-    font-size: 8px;
+    font-size: 10px;
+    padding: 20px;
+    margin-bottom: 60px;
 }
-#bloco05 p{
-    color: black;
-     font-size: 5em;
-     font-family: Arial;
-     text-shadow: -4px 5px 10px #000;
-    
- }
+
 
 
 #bloco01{
@@ -48,7 +45,24 @@ p{
     background:red;
     /* left: 1100px;
     top: 0; 
-    clear: left; */
-    overflow: auto
+    clear: left; 
+    overflow: auto*/
+    border-radius: 20px;
 }
 
+#bloco05 p{
+    color: black;
+     font-size: 5em;
+     font-family: Arial;
+     text-shadow: -4px 5px 10px #000;
+    
+ }
+
+ #bloco06 {
+     border: 1px solid black;
+     width: 500px;
+     height: 500px;
+     font-size: 5em;
+     margin: 5%;
+     box-shadow: inset -5px 10px 10px black, -5px 10px 40px black;
+ }
