@@ -82,10 +82,12 @@ li{
 ```
 > OBS: A propriedade `position` tem muitas variações, como a `static`, `absolute`, `fixed`, `relative` entre outras. É importante conhecer cada uma delas para usa-las com sabedoria. A que mais usamos é a `relative`, pois com essa propriedade conseguimos mover o elemento através das outras propriedades, como, `top`, `left` e etc.
 
-   1. `static` Os elementos são renderizados em ordem, conforme aparecem no fluxo do documento;
-   2. `absolute` O elemento é posicionado em relação ao seu primeiro elemento ancestral posicionado (não estático);
-   3. `fixed` O elemento está posicionado em relação à janela do navegador;
-   4. `relative` O elemento é posicionado em relação à sua posição normal, então "left: 20px" adiciona 20 pixels à posição ESQUERDA do elemento.
+   1. `static` Todos os elementos tem o estado padão `static`. Os elementos são renderizados em ordem, conforme aparecem no fluxo do documento;
+   2. `absolute` O elemento é posicionado em relação ao seu primeiro elemento ancestral posicionado (não estático), ou seja, quando você declara uma propriedade direcional em um elemento absolutamente posicionado, ele será posicionado em relação as seu ancestral declarado mais próximo;
+   > OBS: É possível "esticar" os elementos, ao invés de apenas declarar sua altura e largura, se usar uma declaração absoluta junto com a herança, ou seja, dessa forma as dimensões do seu antepassado declarado posicionado mais próximo (avô) será ultrapassada pelo filho ou neto. 
+   3. `fixed` O elemento está posicionado em relação à janela do navegador, ou seja, ficará fixo mesmo usando a barra de rolagem;
+   > OBS: Um elemento de posição `fixed` nunca respeitará seus ancestrais, será sempre posicionado em relação à janela do documento.
+   4. `relative` O elemento é posicionado com o uso dos elemento `top` `left` `right` `botom` em relação à sua posição normal, então "left: 20px" adiciona 20 pixels à posição ESQUERDA do elemento.
 
 
 
