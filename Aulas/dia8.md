@@ -104,6 +104,19 @@ li{
 }
 ```
 > OBS: A propriedade `float` funciona apenas com os `positions-relative` e `position-fixed`.
+> OBS: O uso do `float` é muito comum para posicionar imagens, pode- se posicionar mais de uma imagem num mesmo código css e html. Ex: 
+```html
+        <h1>FLOAT TWO OBJECTS RIGHT</h1>
+        <p>
+            <img class="float-two-right" src="brasao_azevedo.jpg" width="100" height="100">
+            <img class="float-two-right" src="brasao_republica.png" width="100" height="100">
+```
+```css
+.float-two-right{
+float: right;
+margin: 0 0 10px 10px
+}
+```
 
 - **Z-index:**  Modifica a ordem do empilhamento natural do html. No exemplo abaixo, a ordem de empilhamento natural seria o "bloco 03" na frente dos "blocos 01 e 02", com o `z-index` o "bloco 01" ficará na frente dos outros blocos. Ex:
 ```css

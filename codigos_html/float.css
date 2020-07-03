@@ -1,0 +1,47 @@
+.float-left{
+    float: left;
+    margin: 0 10px 10px 0; 
+}
+.float-right{
+    float: right;
+    margin: 0 0 10px 10px;
+}
+.float-two-left{
+    float: left;
+    margin: 0 10
+}
+.float-two-right{
+    float: right;
+    margin: 0 0 10px 10px
+}
+
+.bloco{
+    background: palevioletred;
+    padding: 20px;
+    box-shadow: 0px 0px 0px 20px orange inset;
+    border: 4px solid blue;
+    font-size: 0px;
+}
+.box-wide{
+  background: black;
+  height: 100px;
+  width: 100%;
+}
+.box{
+    background: blue;
+    font-size: 100px;
+}
+/* .float-left img {
+    max-width: 100px;
+    max-height: 120px;
+    width: auto;
+    height: auto;
+
+}
+.float-right img { 
+    max-width: 100px;
+    max-height: 120px;
+    width: auto;
+    height: auto;
+
+} */
