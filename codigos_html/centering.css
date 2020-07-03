@@ -1,0 +1,53 @@
+div{
+    height: 500px;
+    width: 500px;
+    background: white;  
+    box-shadow: 3px 3px 6px 3px rgba(0, 0, 0, .2);
+    padding: 15px;
+    border-radius: 8px;
+}
+body{
+    background: #FAFAF5;
+}
+#container_display{
+    text-align: center;
+}
+.imagem_display{
+    display: inline-block;
+}
+#container_margin{
+    display: block;
+}
+.imagem_margin{
+    margin-left: auto;
+    margin-right: auto;
+}
+#container_position{
+    position: relative;
+}
+.imagem_position{
+position: absolute;
+left: 50%; /*Começa a posicionar na metade horizontal do elemento*/
+top: 50%; /*Começa a posicionar da metade vertical do elemento*/
+margin-left: -100px; /* Voltar metade horizontal do bloco*/
+margin-top: -100px; /*voltar metade vertical do bloco*/
+}
+
+.imagem_relative{
+position: relative;
+left: 30%; /*Começa a posicionar na metade horizontal do elemento*/
+top: 30%; /*Começa a posicionar da metade vertical do elemento*/
+
+}
+
+
+.linha_centro{
+    text-align: center;
+}
+
+/* .imagem_centro{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    +transform: -50% -50/;
+    } */

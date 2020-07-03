@@ -87,7 +87,7 @@ li{
    > OBS: É possível "esticar" os elementos, ao invés de apenas declarar sua altura e largura, se usar uma declaração absoluta junto com a herança, ou seja, dessa forma as dimensões do seu antepassado declarado posicionado mais próximo (avô) será ultrapassada pelo filho ou neto. 
    3. `fixed` O elemento está posicionado em relação à janela do navegador, ou seja, ficará fixo mesmo usando a barra de rolagem;
    > OBS: Um elemento de posição `fixed` nunca respeitará seus ancestrais, será sempre posicionado em relação à janela do documento.
-   4. `relative` O elemento é posicionado com o uso dos elemento `top` `left` `right` `botom` em relação à sua posição do parente mais próximo, então "left: 20px" adiciona 20 pixels à posição ESQUERDA do elemento.
+   4. `relative` O elemento é posicionado com o uso dos elemento `top` `left` `right` `botom` em relação à sua posição natural, então "left: 20px" adiciona 20 pixels à posição ESQUERDA do elemento.
 
 
 
