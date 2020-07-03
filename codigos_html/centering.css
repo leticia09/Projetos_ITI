@@ -44,10 +44,3 @@ top: 30%; /*Começa a posicionar da metade vertical do elemento*/
 .linha_centro{
     text-align: center;
 }
-
-/* .imagem_centro{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    +transform: -50% -50/;
-    } */
