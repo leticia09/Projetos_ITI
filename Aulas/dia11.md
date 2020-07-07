@@ -14,11 +14,11 @@
 }
 ```
 - Propriedades:
-    1. row(padrão): da esquerda para a direita;
+    1. row (linha) (padrão): da esquerda para a direita;
     2. row-reverse: da direita para a esquerda;
-    3. column: igual a row mas de cima para baixo.
+    3. column: igual a row mas de cima para baixo;
+    4. column-reverse: igual a row-reverse mas de baixo para cima.
 
-    4. column-reverse: igual a row-reverse mas de baixo para cima
 - **Flex wrap:** Por padrão, todos os itens flexíveis tentarão caber em uma linha. Você pode alterar isso e permitir que os itens sejam agrupados conforme necessário com esta propriedade. Ex:
 ```css
 .parent{
@@ -46,7 +46,7 @@
     4. Space-between: Os itens são distribuídos igualmente na linha; o primeiro item está na linha inicial, o último item na linha final;
     5. Space-around: Os itens são distribuídos igualmente na linha com espaço igual ao seu redor. Observe que visualmente os espaços não são iguais, pois todos os itens têm espaço igual nos dois lados. O primeiro item terá uma unidade de espaço contra a borda do contêiner, mas duas unidades de espaço entre o próximo item, porque esse próximo item possui seu próprio espaçamento que se aplica.
 
-- **Align itens:** Isso define o comportamento padrão de como os itens flexíveis são dispostos ao longo do eixo transversal na linha atual. Pense nisso como a `justify-content` versão para o eixo transversal. Ex:
+- **Align itens:** Isso define o comportamento padrão de como os itens flexíveis são dispostos ao longo do eixo Y.
 ```css
 .parent{ 
     display: flex;
@@ -59,7 +59,7 @@
     3. flex-end/ end/ self-end: os itens são colocados no final do eixo transversal. A diferença novamente é sutil e é sobre respeitar flex-directionregras versus writing-moderegras;
     4. center: os itens estão centralizados no eixo transversal.
 
-- **Align content:** Alinha as linhas de um contêiner flexível dentro quando houver espaço extra no eixo transversal. Ex: 
+- **Align content:** Alinha as linhas de um contêiner flexível dentro quando houver espaço extra no eixo Y. Ex: 
 ```css 
 .parent{ 
     display: flex;
@@ -76,3 +76,6 @@
     5. Space-around: itens distribuídos uniformemente com espaço igual ao redor de cada linha;
     6. Space-evenly: os itens são distribuídos igualmente com espaço igual ao seu redor;
     7. Stretch (padrão): as linhas se estendem para ocupar o espaço restante.
+
+    - **Order:**
+    - **Flex-grow:** É possível controlar a proporção de quanto cada elemento individualmente crescerá
