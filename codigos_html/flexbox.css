@@ -29,31 +29,32 @@ h2{
     background: DeepSkyblue;
     color: white;
     text-align: center;
-    line-height: 50px;
+    line-height: 30px;
     font-weight: 600;
-    
+    /* height: 100px; */
 
 }
 
 .parent{
-    /* height: 200px;  */
+    height: 200px; 
     display: flex;
     /*flex-direction: row-reverse; /*O conteúdo que geralmente começa da esquerda pra direita, começa da direita pra esquerda*/
     /* flex-direction: column; O conteúdo fica no formato de coluna */
     /* flex-direction: column-reverse; O conteúdo fica em fotmato de coluna, só que com a ordem inversa */
-    /* flex-wrap: wrap; */
-    /* justify-content: space-around; */
+    flex-wrap: wrap-reverse;
+    /* justify-content: end; */
     /* align-items: center; */
-    /* align-content: space-between; */
+    align-content: space-between;
     /* flex-direction: column;*/
 }
- .item{
-    width: 20%;
+  .item{
+    width: 45%;
 }
+/*
 .item:nth-child(2){
     order: 1;
 }
 
 .item:nth-child(3){
     order: 2;
-}
+} */
