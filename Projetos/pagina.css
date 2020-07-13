@@ -1,0 +1,159 @@
+    @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+    
+    *{
+        font-family: 'Josefin Sans', sans-serif;
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+
+    }
+    .head_principal {
+
+        background-image: url(./tigre_pricipal.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 768px;
+        /* height: 100vh; */
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+       
+       }
+
+    .nav_bar{
+        background: rgba(0, 0, 0, 0.3);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .container{
+        width: 1088px;  
+         
+    }
+    .nav_bar .container{
+        display: flex;
+        justify-content: space-between;
+       
+    }
+    .nav_title{
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        color: white;
+        font-size: 28px;
+        font-weight: 700;
+    }
+    .nav_menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+    }
+    .item{
+        color: white;
+        padding: 30px;
+    }
+    .item:hover{
+        background: rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+        font-weight: 700;
+    } 
+    .container2{
+        
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        top: 200px;
+        
+    }
+    .container3{
+        color: white;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 220px;
+       
+    }
+    .title_boby{
+        height: 60px;
+        font-size: 50px;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+    .title2_boby{
+        height: 15px;
+        font-size: 25px;
+        font-weight: 700;
+    }
+    .opicion_boby{
+        background: rgba(220, 220, 220, 0.35);
+    }
+    .opicion2_boby{
+        padding-left: 25px;
+        background: rgba(220, 220, 220, 0.35);
+     }
+     .conteudo{
+         color: #777777;
+         background: white;
+         box-sizing: border-box;
+         width: 500px;
+         position: relative;
+         top: 330px;
+         left: 120px;   
+         /* box-shadow: 3px 3px 6px 3px rgba(0, 0, 0, .2); */
+         border-radius: 10px;
+     }
+     .texto{
+         padding: 30px;
+     }
+     .texto_lateral{
+        color: #777777;
+        background: white;
+        width: 280px;
+        position: relative;
+        top: -400px;
+        left: 650px;
+        /* border: 1px solid black; */
+        border-radius: 10px;
+     }
+     .h1{
+         font-size: 18px;
+        padding: 10px;
+        padding-top: 30px;
+        padding-left: 50px;
+    }
+     .linha1{
+         padding:10px;
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+     }
+     .linha2{
+        padding:10px;
+    }
+    .linha3{
+        padding:10px;
+    }
+    .linha4{
+        padding:10px;
+    }
+    .linha5{
+        padding:10px;
+    }
+    .linha6{
+        padding:10px;
+    }
+    .linha7{
+        padding:10px;
+    }
+
+
+    /*
+    No corpo do conteúdo o espaço entre os containers de texto e que tem a tabela é: 16px;
+    O texto tem 8/12 do disponível do container;
+    O outro container com a tabela tem 4/12 do disponível do container;
+    O Texto do título a cor é #777777;
+    */
