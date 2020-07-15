@@ -11,7 +11,7 @@
 ### Millimeters (mm)
 - Milimetros
 ### Points (pt)
-- Pontos pt (1 t = 1/72 de 1 pol)
+- Pontos pt (1 pt = 1/72 de 1 pol)
 ### Picas (pc)
 -  Picas (1pc = 12 pt)
 
@@ -26,7 +26,7 @@
 - rem: Relativo ao tamanho da fonte do elemento raiz.
 ### Character-sizes (ex & ch)
 - ex: Relativo à altura da fonte atual (raramente usada);
-- ch: Em relação à largura do "0" (zero).
+- ch: Em relação à largura do dígito "0" (zero).
 ### Viewport Dimensions (vw & vh)
 - vw: Relativo a 1% da largura da janela de visualização;
 - vh: Relativo a 1% da altura da janela de visualização;
