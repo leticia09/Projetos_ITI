@@ -3,20 +3,32 @@
 ## Absolute
 
 ### Pixels (px)
-### Inches (in)
+- Pixels (1px = 1/96 de 1 pol)
+### Inches (in) 
+- Em polegadas (1pol = 96 px = 2,54 cm)
 ### Centimeters (cm)
+- Centímetos
 ### Millimeters (mm)
+- Milimetros
 ### Points (pt)
+- Pontos pt (1 t = 1/72 de 1 pol)
 ### Picas (pc)
+-  Picas (1pc = 12 pt)
 
 
 ## Relative
 - Obtém suas medições com relação a algo. Exisitem três unidades qua baseiam suas dimensões nas dimensões de seus pai atualmente
 
 ### Percentages (%)
-- São comprimentos relativos com base em seus pais.
+- São comprimentos relativos com base em seus elementos pais.
 ### Font-sizes (em & rem)
+- em: Relativo ao tamanho da fonte do elemento (2em = 2x o tamanho da fonte atual);
+- rem: Relativo ao tamanho da fonte do elemento raiz.
 ### Character-sizes (ex & ch)
+- ex: Relativo à altura da fonte atual (raramente usada);
+- ch: Em relação à largura do "0" (zero).
 ### Viewport Dimensions (vw & vh)
-- Viewport Max (vmax)
-- Viewport Min (vmin)
+- vw: Relativo a 1% da largura da janela de visualização;
+- vh: Relativo a 1% da altura da janela de visualização;
+- Viewport Max (vmax): Relativo a 1% da dimensão maior da viewport;
+- Viewport Min (vmin): Relativo a 1% da dimensão menor da viewport.
