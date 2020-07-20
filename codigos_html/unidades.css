@@ -1,0 +1,17 @@
+.exemplo{
+    height: 400px;
+    width: 400px;
+    background: hsla(335, 100%, 55%, 0.3);
+}
+.pai{
+    height: 400px;
+    width: 400px;
+    background:hsla(196, 100%, 55%, 0.3);
+}
+.filho{
+    margin-top: 50px;
+    height: 50%;
+    width: 50%;
+    background: hsla(30, 100%, 55%, 0.3);
+
+}
