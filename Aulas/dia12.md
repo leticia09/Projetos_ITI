@@ -32,3 +32,5 @@
 - vh: Relativo a 1% da altura da janela de visualização;
 - Viewport Max (vmax): Relativo a 1% da dimensão maior da viewport;
 - Viewport Min (vmin): Relativo a 1% da dimensão menor da viewport.
+
+> OBS: nessas unidades de Viewport, existe a propriedade responsiva, ou seja, se você mexer no tamanho da tela, as unidades declaradas nas regras CSS acompanharam essa mudança.

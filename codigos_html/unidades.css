@@ -1,17 +1,72 @@
-.exemplo{
-    height: 400px;
+/* PIXELS */
+
+.exemplo {
+    font-size: 10px;
+    /*height: 400px;
     width: 400px;
-    background: hsla(335, 100%, 55%, 0.3);
+    background: hsla(335, 100%, 55%, 0.3); */
 }
-.pai{
+
+/* .pai{
     height: 400px;
     width: 400px;
     background:hsla(196, 100%, 55%, 0.3);
-}
+} */
+
+/*  PORCENTAGEM
 .filho{
     margin-top: 50px;
     height: 50%;
     width: 50%;
     background: hsla(30, 100%, 55%, 0.3);
 
+} */
+
+/* VM/VH
+.vw{
+    background: hsla(196, 50%, 55%, 0.3);
+    height: 400vh;
+    width: 50vw;
+
+} */
+
+/* VMIN/VMAX
+.vmin{
+    background: hsla(196, 10%, 55%, 0.3);
+    height: 400px;
+    /* width: 50vmax;*
+    width: 50vmin;
+} */
+
+/*  EX/CH
+.ex{
+    font-size: 50px;
+    background: hsla(196, 30%, 55%, 0.3);
+    height: 2ex;
+    width: 50%;
+} */
+
+/* .em {
+    margin-bottom: 100px;
+    background: hsla(196, 100%, 55%, 0.3);
+    width: 2em;
+    font-size: 2em;
 }
+
+.rem {
+    
+    background: hsla(196, 100%, 55%, 0.3);
+    width: 5rem;
+    font-size: 5rem;
+} */
+.exemplo > div{
+    background: hsla(196, 100%, 55%, 0.3);
+padding: 20px 0;
+font-size: 16px;
+white-space: nowrap;
+}
+.in{ width: 3in; }
+.cm{ width: 3cm; }
+.mm{ width: 3mm; }
+.pt{ width: 3pt; }
+.pc{ width: 3pc; }
