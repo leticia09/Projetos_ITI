@@ -1,10 +1,14 @@
+/* :root{
+    font-size: ;
+} */
+
 /* PIXELS */
 
 .exemplo {
     font-size: 10px;
-    /*height: 400px;
-    width: 400px;
-    background: hsla(335, 100%, 55%, 0.3); */
+    /* height: 400px;
+    width: 400px; */
+    /* background: hsla(335, 100%, 55%, 0.3); */
 }
 
 /* .pai{
@@ -13,8 +17,8 @@
     background:hsla(196, 100%, 55%, 0.3);
 } */
 
-/*  PORCENTAGEM
-.filho{
+ /* PORCENTAGEM */
+/* .filho{
     margin-top: 50px;
     height: 50%;
     width: 50%;
@@ -22,27 +26,27 @@
 
 } */
 
-/* VM/VH
-.vw{
+/* VM/VH */
+/* .vw{
     background: hsla(196, 50%, 55%, 0.3);
-    height: 400vh;
+    height: 100vh;
     width: 50vw;
 
 } */
 
-/* VMIN/VMAX
-.vmin{
+/* VMIN/VMAX */
+/* .vmin{
     background: hsla(196, 10%, 55%, 0.3);
     height: 400px;
-    /* width: 50vmax;*
+    /* width: 50vmax; 
     width: 50vmin;
 } */
 
-/*  EX/CH
-.ex{
+/*  EX/CH */
+/* .ex{
     font-size: 50px;
     background: hsla(196, 30%, 55%, 0.3);
-    height: 2ex;
+    height: 2ch;
     width: 50%;
 } */
 
@@ -54,17 +58,17 @@
 }
 
 .rem {
-    
     background: hsla(196, 100%, 55%, 0.3);
     width: 5rem;
     font-size: 5rem;
 } */
-.exemplo > div{
-    background: hsla(196, 100%, 55%, 0.3);
+.exemplo > div{ /* O sinal de ">" está na aula 7*/
+background: hsla(196, 100%, 55%, 0.3);
 padding: 20px 0;
 font-size: 16px;
-white-space: nowrap;
+white-space: nowrap; /*Obriga a não quebrar linha*/
 }
+
 .in{ width: 3in; }
 .cm{ width: 3cm; }
 .mm{ width: 3mm; }
