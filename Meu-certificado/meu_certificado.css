@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+* {
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.head_principal {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+.head_titulo {
+    font-size: 28px;
+    color: #808080;
+}
+
+.head_lateral {
+    display: flex;
+    flex-direction: column;
+    color: #243B82;
+    font-size: 16px;
+}
+
+a {
+    font-size: 12px;
+}
+
+.container {
+    height: 700px;
+    background: #F5F5FA;
+    box-shadow: inset 3px 3px 6px 3px rgba(0, 0, 0, .2);
+}
+
+.conteudo {
+    padding: 24px;
+    display: flex;
+}
+
+.head_tabela {
+    height: 35px;
+    padding: 8px;
+    background: rgba(109, 109, 109, 0.2);
+    display: flex;
+    color: #7A7D88;
+}
+
+.tabela {
+    margin-right: 120px;
+}
+
+.avisos {
+    margin-left: 30px;
+    background: white;
+    border-radius: 10px;
+}
+
+.head_avisos {
+    border-radius: 10px 10px 0 0;
+    background: rgba(109, 109, 109, 0.2);
+}
+
+#p_head {
+    padding: 24px;
+    text-align: center;
+}
+
+#p_conteudo {
+    padding: 24px;
+    text-align: justify;
+    line-height: 1.5;
+}
+.footer_avisos{
+    margin-top: 100px;
+    margin-left:40px;
+    margin-bottom: 40px;
+    margin-right: 40px;
+    display: flex;
+    justify-content: space-between;
+}
