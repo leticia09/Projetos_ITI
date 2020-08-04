@@ -26,6 +26,7 @@
 
 a {
     font-size: 12px;
+    color: cornflowerblue;
 }
 
 .container {
@@ -41,25 +42,44 @@ a {
 
 .head_tabela {
     height: 35px;
+    width: 900px;
     padding: 8px;
-    background: rgba(109, 109, 109, 0.2);
-    display: flex;
     color: #7A7D88;
 }
 
-.tabela {
-    margin-right: 120px;
+table {
+    border-collapse: collapse;
+    width: 800px;
+}
+table tbody tr{
+    border-bottom: 1pt solid #f7f1f1;
+}
+th{
+    background: rgba(202, 195, 195, 0.2); 
+    height: 40px;
+    
+}
+td {
+    background: white;
+    text-align: left;
+    padding: 13px;
+}
+span{
+    color:rgba(12, 11, 11, 0.7);
 }
 
 .avisos {
+    margin-top: 5px;
     margin-left: 30px;
     background: white;
     border-radius: 10px;
+
 }
 
 .head_avisos {
     border-radius: 10px 10px 0 0;
-    background: rgba(109, 109, 109, 0.2);
+    background: rgba(37, 58, 172, 0.1);
+    color: #243B82;
 }
 
 #p_head {
@@ -70,13 +90,19 @@ a {
 #p_conteudo {
     padding: 24px;
     text-align: justify;
-    line-height: 1.5;
+    line-height: 1.7;
+    color: #243B82;
 }
-.footer_avisos{
+
+.footer_avisos {
+    color: #243B82;
     margin-top: 100px;
-    margin-left:40px;
+    margin-left: 40px;
     margin-bottom: 40px;
     margin-right: 40px;
     display: flex;
     justify-content: space-between;
+}
+.footer_avisos:hover{
+  cursor: pointer;
 }
