@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 * {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -13,7 +13,7 @@
 }
 
 .head_titulo {
-    font-size: 28px;
+    font-size: 24px;
     color: #808080;
 }
 
@@ -30,7 +30,7 @@ a {
 }
 
 .container {
-    height: 700px;
+    min-height: 700px;
     background: #F5F5FA;
     box-shadow: inset 3px 3px 6px 3px rgba(0, 0, 0, .2);
 }
@@ -41,7 +41,7 @@ a {
 }
 
 .head_tabela {
-    height: 35px;
+    /* height: 35px; */
     width: 900px;
     padding: 8px;
     color: #7A7D88;
@@ -50,34 +50,42 @@ a {
 table {
     border-collapse: collapse;
     width: 800px;
+    /* width: 100%; */
+    color: #7A7D88;
 }
-table tbody tr{
-    border-bottom: 1pt solid #f7f1f1;
+
+table tbody tr {
+    border-bottom: 1px solid rgba(202, 195, 195, 0.2);
 }
-th{
-    background: rgba(202, 195, 195, 0.2); 
+
+th {
+    background: rgba(202, 195, 195, 0.2);
     height: 40px;
-    
+    text-align: left;
+    padding: 12px;
 }
+
 td {
     background: white;
     text-align: left;
-    padding: 13px;
+    padding: 12px;
 }
-span{
-    color:rgba(12, 11, 11, 0.7);
+
+span {
+    color: rgba(12, 11, 11, 0.7);
+    font-weight: bold;
 }
 
 .avisos {
     margin-top: 5px;
     margin-left: 30px;
+    margin-right: 30px;
     background: white;
-    border-radius: 10px;
-
+    border-radius: 8px;
 }
 
 .head_avisos {
-    border-radius: 10px 10px 0 0;
+    border-radius: 8px 8px 0 0;
     background: rgba(37, 58, 172, 0.1);
     color: #243B82;
 }
@@ -103,6 +111,7 @@ span{
     display: flex;
     justify-content: space-between;
 }
-.footer_avisos:hover{
-  cursor: pointer;
+
+.footer_avisos:hover {
+    cursor: pointer;
 }
