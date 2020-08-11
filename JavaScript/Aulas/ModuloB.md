@@ -28,39 +28,33 @@
 - **String** Existem três formas de delimitar a string (cadeias de caracteres) no JavaScript. 
     - var s1 = "JavaScript"
     - var s2 = 'JavaScript'
-    - var s3 = `JavaScript`
+    - var s3 = \`JavaScript\`
 
 - **Number:** No JavaScript não existe diferença de números inteiros e reais os números são chamados de  `number`. Eles podem ser: `Infinity` ou `NaN`.
 
 - **Boolean:** São valores. `true` ou `false`.
 
-- **Null:**
-
-- **Undefined:**
-
-- **Object:**
-
-- **Function:**
+> Outros tipos de dados são: Null, Undefined, Object e  Function.
 
 ## Manipulação de Dados
 
 ### Chamar uma variável
-- É necessário colocar o nome da variável fora da '' e utilizar o + para juntar a variável com a frase
+- É necessário colocar o nome da variável fora da '' e utilizar o + para concatenar a variável com a frase
 ```js
-    var nome = window.prompt('Qual é seu nome?')
-    window.alert(nome + ' obrigada por acessar essa página!')
+var nome = window.prompt('Qual é seu nome?');
+window.alert(nome + ' obrigada por acessar essa página!');
 ```
 ```js
-var n1 = window.prompt('Digite o lado:')
-var n2 = window.prompt('Digite a altura:')
+var n1 = window.prompt('Digite o lado:');
+var n2 = window.prompt('Digite a altura:');
 var resultado = n1 * n2
-window.alert('A área do retângulo é ' + resultado)
+window.alert('A área do retângulo é ' + resultado);
 ```
-- **Conversão de string para  número:** O carácter + serve para adição (number + number) e concatenação (string + string). No exemplo acima, o `window.prompt` interpreta como uma string, então o `n1 * n2` está concatendo. Para transformar essa string em um número usamos as seguintes linhas de código: `Number.parseInt(n)` para número inteiro, `Number.parseFloat(n)` para número real, entre outras. Ex: 
+- **Conversão de string para  número:** O carácter + serve para adição (number + number) e concatenação (string + string) ou (number + string) e etc. No exemplo acima, o `window.prompt` interpreta como uma string, então o `n1 * n2` está concatendo. Para transformar essa string em um número usamos as seguintes linhas de código: `Number.parseInt(n)` para número inteiro, `Number.parseFloat(n)` para número real, entre outras. Ex: 
 
 ```js
-var n1 = Number.prseInt(window.prompt('Digite o lado:'))
-var n2 = Number.parseInt(window.prompt('Digite a altura:'))
+var n1 = Number.parseInt(window.prompt('Digite o lado:'));
+var n2 = Number.parseInt(window.prompt('Digite a altura:'));
 var resultado = n1 * n2
 window.alert('A área do retângulo é ' + resultado)
 ```
@@ -71,14 +65,14 @@ var n1 = Number(window.prompt('Digite o lado:'))
 ```
 - **Conversão de número para string:** Para a conversão de número para string, utilizamos: `String(n)` ou `n.toString()`. Ex: 
 ```js
-var n1 = Number.prseInt(window.prompt('Digite o lado:'))
-var n2 = Number.parseInt(window.prompt('Digite a altura:'))
+var n1 = Number.prseInt(window.prompt('Digite o lado:'));
+var n2 = Number.parseInt(window.prompt('Digite a altura:'));
 var resultado = n1 * n2
-window.alert('A área do retângulo é ' + String(resultado))
+window.alert('A área do retângulo é ' + String(resultado));
 ``` 
 
 - **Formatação de String:**
 - Ao invés de usar a concatenção, ou seja, o +. Usamos o `${nome_variavel}`, isso é chamado de template de string.
 - Para saber quantos carácteres a string tem: `s.length`
 - Para formatar a string para maiúsculo: `s.toUpperCase`
-- Para formatar a string para minúsculo: `s.toLowerCase
+- Para formatar a string para minúsculo: `s.toLowerCase`
