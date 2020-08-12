@@ -73,6 +73,25 @@ window.alert('A área do retângulo é ' + String(resultado));
 
 - **Formatação de String:**
 - Ao invés de usar a concatenção, ou seja, o +. Usamos o `${nome_variavel}`, isso é chamado de template de string.
-- Para saber quantos carácteres a string tem: `s.length`
-- Para formatar a string para maiúsculo: `s.toUpperCase`
-- Para formatar a string para minúsculo: `s.toLowerCase`
+> **OBS:** Para escrever no documento, usamos o `document.write(n)`
+- Para saber quantos carácteres a string tem: `s.length`. Ex:
+```js 
+document.write(`Seu nome em letras Maiúsculas: ${(nome.length())}`);
+```
+- Para formatar a string para maiúsculo: `s.toUpperCase`. Ex:
+```js 
+document.write(`Seu nome em letras Maiúsculas: ${(nome.toUpperCase())}`);
+```
+- Para formatar a string para minúsculo: `s.toLowerCase`. Ex:
+```js 
+document.write(`Seu nome em letras Maiúsculas: ${(nome.toLowerCase())}`);
+```
+> OBS: É possível usar tags do HTML dentro do comando em JS. Ex: 
+```js
+document.write(`Seu nome em letras Maiúsculas: <strong>${(nome.toUpperCase())}</strong>`);
+```
+
+- **Formatação de números:** 
+- `variável.toFixed(2)` Mostra o número com até duas casas decimais depois da vírgula; 
+- `variável.toFixed(2).replace('.', ',')`  Troca o ponto por vírgula;
+- `n1.toLocateString('pt-br', {style:'currency', currency:'BRL'})` Para mostrar o número como se fosse para mostrar um salário. Localiza a string em português, entre as chaves está os atributos/configurações. ESSA LINHA DE CÓDIGO NÃO DEU CERTO NO MEU NODE.JS

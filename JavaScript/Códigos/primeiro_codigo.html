@@ -20,12 +20,15 @@
         // window.confirm('O que acha do JavaScript?')
         // var nome = window.prompt('Qual é seu nome?')
         // window.alert(nome + ' Obrigado por acessar essa página')
-        var n1 = window.prompt('Digite o lado:');
-        var n2 = Number.parseInt(window.prompt('Digite a altura:'));
-        var resultado = n1 * n2
-        //window.alert('A área do retângulo é ' + String(resultado) + '\n' + typeof n1 + '\n' + typeof n2);
-        window.alert(`A área do retângulo é ${String(resultado)}  \n ${typeof n1}: ${n1} \n ${typeof n2}: ${n2}`); //Uso da crase facilita a vida
-    </script>
+        // var n1 = window.prompt('Digite o lado:');
+        // var n2 = Number.parseInt(window.prompt('Digite a altura:'));
+        // var resultado = n1 * n2
+        // window.alert(`A área do retângulo é ${String(resultado)}  \n ${typeof n1}: ${n1} \n ${typeof n2}: ${n2}`); //Uso da crase facilita a vida
+        var nome = window.prompt(`Digite seu nome:`)
+        document.write(`Seu nome é: ${nome} e tem ${(nome.length())} letras`);
+        document.write(`Seu nome em letras Maiúsculas:  <strong>${nome}</strong> ${(nome.toUpperCase())}`)
+ 
+ </script>
 
 </body>
 </html>
