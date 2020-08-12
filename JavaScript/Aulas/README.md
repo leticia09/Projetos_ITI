@@ -5,12 +5,12 @@
 - Aula 8 Operadores parte 1;
 - Aula 9 Operadores parte 2;
 
-## [Módulo C]
+## [Módulo C](https://github.com/leticia09/Projetos_ITI/blob/master/JavaScript/Aulas/ModuloC.md)
 - Aula 10 Entendendo DOM
 - Aula 11 Introdução ao DOM
 - Aula 12 Eventos DOM
 
-## [Módulo D]
+## [Módulo D](https://github.com/leticia09/Projetos_ITI/blob/master/JavaScript/Aulas/ModuloD.md)
 - Aula 13 Condições em JavaScript
 - Aula 14 Condições parte 1
 - Aula 15 Condições parte 2
@@ -18,7 +18,7 @@
 - Aula 17 Exercício JavaScript parte 2
 - Aula 18 Exercício JavaScript parte 3
 
-## [Módulo E]
+## [Módulo E](https://github.com/leticia09/Projetos_ITI/blob/master/JavaScript/Aulas/ModuloE.md)
 - Aula 19 Repetições em JavaScript
 - Aula 20  Repetições parte 1
 - Aula 21 Repetições parte 2
@@ -26,7 +26,7 @@
 - Aula 23 Repetições parte 4
 - Aula 24 Repetições parte 5
 
-## [Módulo F]
+## [Módulo F](https://github.com/leticia09/Projetos_ITI/blob/master/JavaScript/Aulas/ModuloF.md)
 - Aula 25 Avançando os estudos em JavaScript
 - Aula 26 Variáveis compostas 
 - Aula 27 Funções
