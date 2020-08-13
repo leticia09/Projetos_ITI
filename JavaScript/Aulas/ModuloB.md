@@ -94,4 +94,51 @@ document.write(`Seu nome em letras Maiúsculas: <strong>${(nome.toUpperCase())}<
 - **Formatação de números:** 
 - `variável.toFixed(2)` Mostra o número com até duas casas decimais depois da vírgula; 
 - `variável.toFixed(2).replace('.', ',')`  Troca o ponto por vírgula;
-- `n1.toLocateString('pt-br', {style:'currency', currency:'BRL'})` Para mostrar o número como se fosse para mostrar um salário. Localiza a string em português, entre as chaves está os atributos/configurações. ESSA LINHA DE CÓDIGO NÃO DEU CERTO NO MEU NODE.JS
+- `n1.toLocateString('pt-br', {style:'currency', currency:'BRL'})` Para mostrar o número como se fosse para mostrar um salário. Localiza a string em português, entre as chaves está os atributos/configurações. ESSA LINHA DE CÓDIGO NÃO DEU CERTO NO MEU NODE.JS 
+
+## Operadores 
+
+- **Aritméticos:** Os operadores aritmétricos são: (+), (-), (*), (/ divisão real), (% resto da divisão inteira) e (** potência).
+> **OBS:** Ordem de **Precedência:** (), **, *, /, %, + e -.
+- **Operadores de auto-atribuições:** É quando uma variável recebe um valor, e no próximo comando essa mesma variável é somada a um número real, ou seja, a variável receberá um novo valor. Ex:
+```js
+> var n = 3
+> n = n + 4 ou n += 4 // n = 7
+> n = n - 5 // n = 2
+> n = n * 4 // n = 8
+> n = n / 2 // n = 4
+> n = n ** 2 // n = 16 
+> n = n % 5 // n = 1
+// Versão SIMPLIFICADA dos cálculos acima:
+> n += 4
+> n -= 5
+> n *= 4
+> n /= 2
+> n **= 2
+> n %= 5
+```
+- **Operadores de incremento:** É a simplificação da simplificação, ou seja, se antes para simplificar usavamos o `n += 1`, agora usamos o `n++` ou `n--`. Assim o valor de "n" será sempre somado +1 ou subitraido -1.
+
+- **Relacionais:** Os opradores relacionais são: (>, maior que), (<, menor que), (>=, maior ou igual), (<=, menor ou igual), (==, igual)e (!=, diferente). O resultado é sempre "true" ou "false".
+> **OBS:** Quando tem operadores aritméticos e relacionais, a ordem de procedência é: primeiro os aritmeticos e depois os relacionais.
+- Operadores relacionais de **identidade**, ou operador de igualdade restrita `===`. Ele testa se os operadores são idênticos, ou seja, ter no mesmo valor e o mesmo tipo. Ex: `5 == 5 true`, `5 == '5' true` mas `5 === '5' false`
+
+- **Lógicos:** Os operadores lógicos são: **(!, negação)** os resultados são "true" ou "false", **(&&, conjunção "e")** nessa condição, basta que um dos operadores sejam "false" para o resultado ser "false", ou seja, "true" "true" = "true", "true" "false" = "false", "false" "true" = "false" e "false" "false" = "false" e **(||, disjunção "ou")** nessa condição, basta que um dos operadores seja "true" para o resultado ser "true", ou seja, "true" "true" = "true", "true" "false" = "true", "false" "true" = "true" e "false" "false" = "false". Ex:
+```js
+> var idade = 18
+> idade >= 15 && idade <= 17 // false
+> var estado = 'RJ'
+> estado == 'RJ' || estado == 'SP' // true
+> var salario = 1300
+> var sexo = 'm'
+> salario > 1500 && sexo != 'm' // false
+```
+> **OBS:** Ordem de procedência: !, && e ||.
+
+- **Ternário:** Os operadores ternários são: (?, interrogação) e (:, dois pontos). Se chama ternário porque tem três blocos, são eles, teste ? true : false, junta três opernados, é um teste lógico. Ex:
+```js
+> var media = 5
+> media >= 7 ? 'aprovado' : 'reprovado' // reprovado
+> media += 3 // media = 8
+> var resultado = media % 2 == 0 ? 5:9 // resultado = 5
+```
