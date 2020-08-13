@@ -133,7 +133,7 @@ document.write(`Seu nome em letras Maiúsculas: <strong>${(nome.toUpperCase())}<
 > var sexo = 'm'
 > salario > 1500 && sexo != 'm' // false
 ```
-> **OBS:** Ordem de procedência: !, && e ||.
+> **OBS:** Ordem de procedência: (!), (&&) e (||).
 
 - **Ternário:** Os operadores ternários são: (?, interrogação) e (:, dois pontos). Se chama ternário porque tem três blocos, são eles, teste ? true : false, junta três opernados, é um teste lógico. Ex:
 ```js
