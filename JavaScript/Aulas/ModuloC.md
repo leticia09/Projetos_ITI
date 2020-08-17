@@ -35,7 +35,7 @@ var h = document.querySelector('h1.title')
 h.style.color = 'green'
 ```
 
-## Eventos DOM
+## Eventos DOM1
 
 - É tudo que vai acontecer com qualquer elemento. Existem vários eventos que podem acontecer. Ex:
     - mouseenter: Evento de mouse (passar o mouse em cima);

@@ -7,4 +7,4 @@ if (velocidade > 80){
 }
 else{
     console.log(`Dirija sempre com segurança`)
-}
+} 

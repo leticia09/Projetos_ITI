@@ -36,4 +36,4 @@ switch(dia_semana) {
         break
     default:
         console.log('Esse dia não existe')
-}
+} 

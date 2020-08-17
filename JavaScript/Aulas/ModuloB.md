@@ -94,7 +94,7 @@ document.write(`Seu nome em letras Maiúsculas: <strong>${(nome.toUpperCase())}<
 - **Formatação de números:** 
 - `variável.toFixed(2)` Mostra o número com até duas casas decimais depois da vírgula; 
 - `variável.toFixed(2).replace('.', ',')`  Troca o ponto por vírgula;
-- `n1.toLocateString('pt-br', {style:'currency', currency:'BRL'})` Para mostrar o número como se fosse para mostrar um salário. Localiza a string em português, entre as chaves está os atributos/configurações. ESSA LINHA DE CÓDIGO NÃO DEU CERTO NO MEU NODE.JS 
+- `n1.toLocaleString('pt-br', {style:'currency', currency:'BRL'})` Para mostrar o número como se fosse para mostrar um salário. Localiza a string em português, entre as chaves está os atributos/configurações.
 
 ## Operadores 
 
@@ -135,7 +135,7 @@ document.write(`Seu nome em letras Maiúsculas: <strong>${(nome.toUpperCase())}<
 ```
 > **OBS:** Ordem de procedência: (!), (&&) e (||).
 
-- **Ternário:** Os operadores ternários são: (?, interrogação) e (:, dois pontos). Se chama ternário porque tem três blocos, são eles, teste ? true : false, junta três opernados, é um teste lógico. Ex:
+- **Ternário:** Os operadores ternários são: (?, interrogação) e (:, dois pontos). Se chama ternário porque tem três blocos, são eles: **teste** `?` **true** `:` **false**. Ex:
 ```js
 > var media = 5
 > media >= 7 ? 'aprovado' : 'reprovado' // reprovado
