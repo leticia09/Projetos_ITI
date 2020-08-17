@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo JavaScript</title>
+    <style>
+        #area {
+            font-size: 20pt;
+            background: rgb(53, 166, 207);
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="area">
+        interagir
+    </div>
+    <script>
+        var a = document.getElementById ('area')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar) 
+        a.addEventListener('mouseout', sair)
+        function clicar(){
+            a.innerText = 'Clicou'
+        }
+
+        function entrar(){
+           a.innerText = 'Entrou'
+        }
+
+        function sair(){
+            a.innerText = 'Saiu'
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passo com o DOM</title>
+    <style>
+        body {
+            background-color: aqua;
+            color: white;
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="title">Iniciando estudos com o <strong>DOM</strong> </h1>
+    <p>Resultado:</p>
+    <div>Clique aqui</div>
+
+    <script>
+        var box = window.document.getElementsByTagName('div')[0];
+        var p1 = window.document.getElementsByTagName('p')[0];
+        // window.document.write('Está escrito assim: ' + p1.innerText);
+        p1.style.color = 'red'
+        box.style.color = 'blue'
+        // Usando Seletor
+        var h = document.querySelector('h1.title')
+        h.style.color = 'black'
+    </script>
+</body>
+
+</html>
