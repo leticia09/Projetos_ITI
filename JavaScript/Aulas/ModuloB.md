@@ -123,7 +123,15 @@ document.write(`Seu nome em letras Maiúsculas: <strong>${(nome.toUpperCase())}<
 > **OBS:** Quando tem operadores aritméticos e relacionais, a ordem de procedência é: primeiro os aritmeticos e depois os relacionais.
 - Operadores relacionais de **identidade**, ou operador de igualdade restrita `===`. Ele testa se os operadores são idênticos, ou seja, ter no mesmo valor e o mesmo tipo. Ex: `5 == 5 true`, `5 == '5' true` mas `5 === '5' false`
 
-- **Lógicos:** Os operadores lógicos são: **(!, negação)** os resultados são "true" ou "false", **(&&, conjunção "e")** nessa condição, basta que um dos operadores sejam "false" para o resultado ser "false", ou seja, "true" "true" = "true", "true" "false" = "false", "false" "true" = "false" e "false" "false" = "false" e **(||, disjunção "ou")** nessa condição, basta que um dos operadores seja "true" para o resultado ser "true", ou seja, "true" "true" = "true", "true" "false" = "true", "false" "true" = "true" e "false" "false" = "false". Ex:
+- **Lógicos:** Os operadores lógicos são: **(!, negação)** os resultados são "true" ou "false", **(&&, conjunção "e")** e **(||, disjunção "ou")**. 
+
+| Lógica       | &&    | \|\| |
+|--------------|-------|------|
+| true + true  | true  | true |
+| true + false | false | true |
+| false + true | false | true |
+
+- Ex:
 ```js
 > var idade = 18
 > idade >= 15 && idade <= 17 // false
