@@ -11,32 +11,32 @@ function carregar(){
         var idade = ano - Number(f_ano.value);
         var genero = '';
         var img = document.createElement('img');
-        img.setAttribute('id', 'foto')
+        img.setAttribute('id', 'foto');
         if (f_sex[0].checked){
             genero = 'homem'
             if (idade <= 10 ){
-                img.setAttribute('src','menino.jpg')
+                img.setAttribute('src','menino.jpg');
             } else if (idade <= 16){
-                img.setAttribute('src','adoleH.jpg')
+                img.setAttribute('src','adoleH.jpg');
             } else if(idade < 60) {
-                img.setAttribute('src','adultoH.jpg')
+                img.setAttribute('src','adultoH.jpg');
             } else{
-                img.setAttribute('src', 'idoso.jpg')
+                img.setAttribute('src', 'idoso.jpg');
             }
         } else{
             genero = 'mulher'
             if (idade <= 10 ){
-                img.setAttribute('src', 'menina.jpg')
+                img.setAttribute('src', 'menina.jpg');
             } else if (idade <= 16){
-                img.setAttribute('src','adoleM.jpg')
+                img.setAttribute('src','adoleM.jpg');
             } else if(idade < 60) {
-                img.setAttribute('src','adultaM.jpg')
+                img.setAttribute('src','adultaM.jpg');
             } else{
-                img.setAttribute('src', 'idosa.jpg')
-            }
+                img.setAttribute('src', 'idosa.jpg');
+            } 
         }
      
         res.innerHTML = `Detectamos ${genero}, sua idade é ${idade} anos`;
-        res.appendChild(img)
+        res.appendChild(img);
     }
 }
