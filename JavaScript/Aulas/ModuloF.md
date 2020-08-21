@@ -56,7 +56,7 @@ console.log(`A chave do valor procurado é: ${position}`);
 > **OBS:** O exercício modF-ex1.js contém todos esses exemplos.
 
 # Funções 
-- As funções geralmente tem uma chamada, conjunto de parâmetros de entrada, ação e retorno. Existem funções que não usam parâmetros ou tem retornos. Funções são ações executadas assim que *chamadas* ou em decorrência de algum evento. Ex:
+- As funções existem para executar uma ação e devem contar obrigatóriamente com uma chamada, podendo ter um conjunto de parâmetros de entrada  e um retorno. Funções são ações executadas assim que *chamadas* ou em decorrência de algum evento. Ex:
 ```js
 function ação (parametros-formal){
     // bloco de código. A ação propriamente dita
