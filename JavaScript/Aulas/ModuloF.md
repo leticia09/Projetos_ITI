@@ -1,8 +1,8 @@
-# Variáveis compostas (Arrays ou Vetors)
-- As variáveis simples só conseguem armazenar um valor por vez, já as **variáveis compostas** são capazes de armazenar vários valores em umas mesma estrutura. O array é uma variável que tem vários elementos, cada elemento é composto por seu valor e uma chave de identificação. Para definir um vetor utilizamos os "[]". Ex:
+# Variáveis compostas (Arrays ou Vetores)
+- As variáveis simples só conseguem armazenar um valor por vez, já as **variáveis compostas** são capazes de armazenar vários valores em uma mesma estrutura. O array é uma variável que tem vários elementos, cada elemento é composto por seu valor e uma chave de identificação. Para definir um vetor utilizamos os "[]". Ex:
 ```js
-var vaga a = [100]; // ou
-var vaga a = [carro0, carro1, carro2];
+vaga a = [100]; // ou
+vaga a = [carro0, carro1, carro2];
 ```
 - A variável `a` do exemplo acima é um vetor. O vetor é composto de elementos. O elemento de um vetor é um par que agrupa o espaço memória, o valor declarado e o índice/chave que é a posição dos elementos. Lembrando que a posição começa sempre do 0. Por último observamos o conteúdo,  que no exemplo são os "carros". 
 - Ex:
@@ -15,7 +15,7 @@ var num = [5, 6, 7];
 var num = [1, 5, 7, 3, 9];
 num[5] = 4;
 ```
-- Para colocar um velor na última posição, mesmo sem saber qual é:
+- Para colocar um valor na última posição, mesmo sem saber qual é:
 ```js
 var num = [1, 5, 7, 3, 9, 4];
 num.push(8);
@@ -35,13 +35,13 @@ num.sort();
 var num = [1, 5, 7, 3, 9, 4, 8];
 console.log(`O primeiro elemento do vetor é ${num[0]}`);
 ```
-- Para mostrar o vetor sem a formatação padrão:
+- Para mostrar o vetor sem a formatação padrão e percorrer o vetor:
 ```js
 var num = [1, 5, 7, 3, 9, 4, 8];
 /*for (var pos = 0; pos < num.length; pos++ ){
     console.log(`A posição ${pos} tem o valor ${num[pos]}`)
 }*/
-// Atualmente usamos o for de forma mais simples para percorrer todo vetor
+// Atualmente usamos o "for" de forma mais simples para percorrer todo vetor
 for (var pos = 0 in num ){
     console.log(num[pos])
 }
