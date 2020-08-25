@@ -4,9 +4,10 @@
 var num = document.getElementById('analise');
 var lista = document.getElementById('lista');
 var res = document.getElementById('res');
-var velores = [];
+var valores = [];
 
 function isNumero(n){
+   // console.log(n, Number(n));
     if(Number(n) >= 1 && Number(n) <= 100){
         return true;
     } else{
@@ -14,7 +15,7 @@ function isNumero(n){
     }
 }
 function inLista(n, l){
-    if(l.indexOf(Number(n)) != 1){
+    if(l.indexOf(Number(n)) != -1){
         return true;
     } else{
         return false;
@@ -36,11 +37,11 @@ function adicionar(){
 
 //Análise dos valores do vetor
 function finalizar(){
-    if(valores.length == 0);{
+    if(valores.length == 0){
         window.alert('Adicione valores para finalizar');
-    } else{
+    } else {
         var total = valores.length;
-        res.innerHTML =''
-        res.innerHTML += `São ${total} elementos cadastrados`
+        res.innerHTML ='';
+        res.innerHTML += `São ${total} elementos cadastrados`;
     }
 }
