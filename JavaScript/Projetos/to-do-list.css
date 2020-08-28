@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(120deg, #e2c35d, #d88771);
+    text-align: center;
+    color: white;
+    min-height: 100vh;
+}
+
+header {
+    font-size: 2rem;
+    min-height: 20vh;
+}
+
+main {
+    min-height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main input, main button {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: none;
+    background-color: white;
+}
+
+main button {
+    color: #d88771;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+main button:hover{
+    background: #d88771;
+    color: white;
+}
+
+.menu {
+    display: flex;
+}
+
+.insert {
+    display: flex;
+}
+
+.selector {
+    width: 110px;
+    margin-left: 16px;
+}

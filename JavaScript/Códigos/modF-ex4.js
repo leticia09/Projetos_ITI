@@ -41,7 +41,8 @@ function finalizar(){
         window.alert('Adicione valores para finalizar');
     } else {
         var total = valores.length;
-        res.innerHTML ='';
+        res.innerHTML = '';
         res.innerHTML += `São ${total} elementos cadastrados`;
+        // usar o textContent para adicionar no HTML
     }
 }

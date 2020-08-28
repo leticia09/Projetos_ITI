@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./to-do-list.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div><h1>Let´s todo List</h1></div>
+    </header>
+    <main>
+        <div class="main">
+            <div class="menu">
+                <input type="text" class="todo-input">
+                <button class="todo-buttom" type="submit" onclick="addTodo()">
+                    <i class="fas fa-plus-square"></i>
+                </button>
+                <!-- <input type="text" class="selector">
+                <button class="todo-button" type="submit">
+                    <i class="fas fa-plus-square"></i>
+                </button> -->
+            
+            </div>
+
+            <div class="todo-container">lista
+                <ul class="todo-list"></ul>
+            </div>
+        </div>
+    </main>
+    <script src="./to-do-list.js"></script>
+</body>
+
+</html>
