@@ -9,7 +9,6 @@ function adicionar() {
 }*/
 
 //selectors
-document.addEventListener("DOMContentLoaded", getTodos);
 const todoInput = document.querySelector(".todo-input");
 const todoButton = document.querySelector(".todo-button");
 const todoList = document.querySelector(".todo-list");
@@ -19,10 +18,11 @@ const filterOption = document.querySelector("#filter-todo");
 todoButton.addEventListener('click', addTodo);
 todoList.addEventListener('click', deleteCheck);
 filterOption.addEventListener('click', filterTodo);
+//document.addEventListener("DOMContentLoaded", getTodos);
+
 
 //Functions
 function addTodo(event) {
-    //Não sei para que serve
     event.preventDefault();
     //Todo DIV
     const todoDiv = document.createElement("div");
@@ -36,7 +36,7 @@ function addTodo(event) {
     saveLocalTodos(todoInput.value)
     //check mark button
     const completedButton = document.createElement("button");
-    completedButton.innerHTML = '<i class = "fas fa-check"></i>'
+    completedButton.innerHTML = '<i class = "fas fa-check"></i>';
     completedButton.classList.add("complete-btn");
     todoDiv.appendChild(completedButton);
     //check trash button
