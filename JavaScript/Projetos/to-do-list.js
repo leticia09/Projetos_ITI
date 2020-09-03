@@ -73,7 +73,7 @@ function deleteCheck(e) {
 }
 
 function filterTodo(e) {
-    // childNudes não sei porque
+    // childNodes não sei porque
     const todos = todoList.childNodes;
     //console.log(todos);
     todos.forEach(function (todo) {
@@ -142,7 +142,7 @@ function getTodos() {
     });
 }
 // Não funcionou 
-function removeLocalTodos(todo){
+function removeLocalTodos(todo) {
     //check-- Do I already have thing in there?
     let todos;
     // Não entendi esse IF
