@@ -6,4 +6,4 @@
 - `todo.classList.toggle('completed');`: Não achei o toggle.
 - `childNodes`: A propriedade childNodes retorna uma coleção de nós filhos de um nó, como um objeto NodeList.
 - `forEach`: O método forEach() executará uma função para cada elemento presente em um array.
-- `contains`: O método contains () retorna um valor booleano indicando se um nó é descendente de um nó especificado. Um descendente pode ser um filho, neto, bisneto e assim por diante. 
+- `contains`: Se existe a classe naquqle elemento específico, o `contains` ele vai dizer se existe ou não a classe usada.O método contains () retorna um valor.
