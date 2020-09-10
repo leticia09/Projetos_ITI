@@ -55,7 +55,7 @@ const keyboard = {
 
         // criar HTML para os icones, linha 29 do html
         const createIconHTML = (icon_name) => {
-            return `<i class="material-icons">${icone_name}</i>`
+            return `<i class="material-icons">${icon_name}</i>`
         };
 
         keyLayout.forEach(key => {
