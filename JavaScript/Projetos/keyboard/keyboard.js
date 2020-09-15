@@ -43,8 +43,7 @@ const keyboard = {
         //Adicionar como filho da keysContainer a function
         this.elements.keysContainer.appendChild(this._createKeys());
 
-        // não sei o que está acontecendo pesqueisar o queryselectorAll
-        // adicionou uma classe para todas as chaves 
+        // está pegando a informção do .keyboard__key e colocando dentro do keys
         this.elements.keys = this.elements.keysContainer.querySelectorAll(".keyboard__key");
 
         // add DOM
@@ -60,7 +59,7 @@ const keyboard = {
         document.querySelectorAll(".use-keyboard-input").forEach(element => {
             element.addEventListener("focus", () => {
                 this.open(element.value, currentValue => {
-                   
+
                     // o valor declarado no textarea será inputado como valor atual
                     element.value = currentValue;
                 });
@@ -72,7 +71,7 @@ const keyboard = {
     // Esta function vai criar todo elemento htlm do teclado virtual, colocando em linhas e fazendo acontecer suas funcionalidades
     _createKeys() {
 
-        // fragment é um pequeno conatainer para as chaves (keys)
+        // fragment é um pequeno container para as chaves (keys)
         const fragment = document.createDocumentFragment();
 
         //
@@ -87,9 +86,15 @@ const keyboard = {
         // criar HTML para os icones, linha 29 do html
         const createIconHTML = (icon_name) => {
             return `<i class="material-icons">${icon_name}</i>`
+            // const icon = document.createElement("i");
+            // icon.classList.add("material-icons");
+            // icon.innerText = icon_name;
+            // return icon;
         };
 
+        // key é um apelido para cada elemento do keyLayout
         keyLayout.forEach(key => {
+
             // criar o botão no obj
             const keyElement = document.createElement("button");
 
@@ -114,8 +119,12 @@ const keyboard = {
                     // adicionando um evento em função
                     keyElement.addEventListener("click", () => {
 
-                        //não entendi
+                        console.log(this.properties.value);
+                        console.log(this.properties.value.length);
+                        //exclui a ultima letra, por isso o length -1
                         this.properties.value = this.properties.value.substring(0, this.properties.value.length - 1);
+                        console.log(this.properties.value);
+                        console.log(this.properties.value.length);
 
                         // rodar a função; ouvir mais sobre
                         this._triggerEvent("oninput");
@@ -134,6 +143,7 @@ const keyboard = {
                     // adicionando um evento em função
                     keyElement.addEventListener("click", () => {
                         this._toggleCapsLock();
+                        // toggle troca os valores um interruptor/ trocador
                         keyElement.classList.toggle("keyboard__key--active", this.properties.capsLock);
 
                     });
@@ -195,6 +205,7 @@ const keyboard = {
                         this.close();
 
                         // desencadear o evento com o handler onclose
+                        // TrIgger
                         this._triggerEvent("onclose");
 
                     });
@@ -212,7 +223,7 @@ const keyboard = {
                         // condição ? verdade : false
                         // se o capslock estiver ativo, então .toUppercase, se não lowerCase
                         this.properties.value += this.properties.capslock ? key.toUpperCase() : key.toLowerCase();
-                        
+
                         // desencadear o evento com o handler oninput
                         this._triggerEvent("oninput");
 
@@ -240,6 +251,10 @@ const keyboard = {
             // então providenciar o atual valor do teclado no código que está usando o teclado
             this.eventHandlers[handlerName](this.properties.value);
 
+            //this.eventHandlers.oninput()
+            console.log(this.eventHandlers[handlerName](this.properties.value));
+            console.log(handlerName);
+            console.log(this.properties.value);
         }
     },
 
@@ -249,12 +264,13 @@ const keyboard = {
         // negaçõa do capslock
         this.properties.capslock = !this.properties.capslock;
 
+        // esse const key é outra coisa, poderia ser outro nome.
         for (const key of this.elements.keys) {
-            
+
             // basicamente faz o check se a chave não tem o icon 
             // ou seja, é uma chave de letras, não de icon (capslock), por exemplo
             if (key.childElementCount === 0) {
-                
+
                 // a comparação condição ? true : false; 
                 key.textContent = this.properties.capslock ? key.textContent.toUpperCase() : key.textContent.toLowerCase();
             }
@@ -263,7 +279,7 @@ const keyboard = {
 
     // aqui é onde todos os métodos serão realizados
     open(initialValue, oninput, onclose) {
-        this.properties, value = initialValue || "";
+        this.properties.value = initialValue || "";
         this.eventHandlers.oninput = oninput;
         this.eventHandlers.onclose = onclose;
         // remove a classe keyboard--hidden para que o teclado apareca
@@ -271,14 +287,14 @@ const keyboard = {
     },
 
     close() {
-        
+
         // reset no valor
         this.properties.value = "";
 
         // porque colocar o 2, se ele só precisa fechar?
         this.eventHandlers.oninput = oninput;
         this.eventHandlers.onclose = onclose;
-        
+
         // quando a classe for keyboard--hidden, o css vai desaparacer com o teclado
         this.elements.main.classList.add("keyboard--hidden");
     }
@@ -303,3 +319,10 @@ window.addEventListener("DOMContentLoaded", function () {
 // 46:32 até 47:00
 // 49:38 até 49:45
 // 53:48 até 53:47
+
+// window.onload = () => {
+//     console.log(keyboard);
+// }
+// window.onchange = () => {
+//     console.log(keyboard);
+// }
