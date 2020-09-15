@@ -72,7 +72,7 @@ const keyboard = {
     // Esta function vai criar todo elemento htlm do teclado virtual, colocando em linhas e fazendo acontecer suas funcionalidades
     _createKeys() {
 
-        // não entendi muito bem o fragment
+        // fragment é um pequeno conatainer para as chaves (keys)
         const fragment = document.createDocumentFragment();
 
         //
@@ -173,7 +173,7 @@ const keyboard = {
                         // pega o valor do obj propriets e adiciona o espaço
                         this.properties.value += " ";
 
-                        // desencadear o evendo
+                        // desencadear o evento  com o handler oninput
                         this._triggerEvent("oninput");
 
                     });
@@ -194,7 +194,7 @@ const keyboard = {
                         // quando o botão for acionado, a função vai fechar o teclado
                         this.close();
 
-                        // desencadear o evento
+                        // desencadear o evento com o handler onclose
                         this._triggerEvent("onclose");
 
                     });
@@ -213,7 +213,7 @@ const keyboard = {
                         // se o capslock estiver ativo, então .toUppercase, se não lowerCase
                         this.properties.value += this.properties.capslock ? key.toUpperCase() : key.toLowerCase();
                         
-                        // desencadear o evento
+                        // desencadear o evento com o handler oninput
                         this._triggerEvent("oninput");
 
                     });
@@ -232,7 +232,7 @@ const keyboard = {
         return fragment;
     },
 
-    // Evento desencadeador
+    // function chamada: Evento desencadeador
     _triggerEvent(handlerName) {
         // se o tipo de evento especifico(typeOf) no eventHandlers for uma função
         if (typeof this.eventHandlers[handlerName] == "function") {
@@ -243,14 +243,16 @@ const keyboard = {
         }
     },
 
-    // alternando capslock
+    // function: alternando capslock
     _toggleCapsLock() {
+
+        // negaçõa do capslock
         this.properties.capslock = !this.properties.capslock;
 
         for (const key of this.elements.keys) {
             
             // basicamente faz o check se a chave não tem o icon 
-            // ou seja, é uma chave de letras, não de capslock, por exemplo
+            // ou seja, é uma chave de letras, não de icon (capslock), por exemplo
             if (key.childElementCount === 0) {
                 
                 // a comparação condição ? true : false; 
@@ -272,8 +274,11 @@ const keyboard = {
         
         // reset no valor
         this.properties.value = "";
+
+        // porque colocar o 2, se ele só precisa fechar?
         this.eventHandlers.oninput = oninput;
         this.eventHandlers.onclose = onclose;
+        
         // quando a classe for keyboard--hidden, o css vai desaparacer com o teclado
         this.elements.main.classList.add("keyboard--hidden");
     }
