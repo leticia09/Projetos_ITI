@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap'); 
 * {
     font-family: 'Poppins', sans-serif;
 }
@@ -17,7 +17,6 @@ h1, strong {
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
     user-select: none;
     transition: botton 0.4s;
-    height: 100px;
 }
 
 .keyboard--hidden {
@@ -49,7 +48,7 @@ h1, strong {
     position: relative;
 }
 
-/*Para o click ficar cinza*/
+
 
 .keyboard__key:active {
     background: rgba(255, 255, 255, 0.12);
@@ -59,7 +58,7 @@ h1, strong {
     width: 12%;
 }
 
-.keyboard__key--extra--wide {
+.keyboard__key--extra-wide {
     width: 36%;
     max-width: 500px;
 }
