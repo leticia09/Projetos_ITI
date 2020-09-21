@@ -9,3 +9,4 @@
 
 - `-webkit-tap-highlight-colo` Não achei;
 
+- pesquisar prop. svg e strokedash
