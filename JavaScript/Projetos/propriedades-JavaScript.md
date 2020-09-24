@@ -22,4 +22,4 @@
 javaScript this w3sho. Criar um md, também olhar videos. 
 marcar o tempo que o cara falar e eu não entender. explicando o porque
 
-- `Math.floor()` O método floor () arredonda um número para o inteiro mais próximo e retorna o resultado. Se o argumento passado for um número inteiro, o valor não será arredondado
+- `mathfloor()` O método floor () arredonda um número para o inteiro mais próximo e retorna o resultado. Se o argumento passado for um número inteiro, o valor não será arredondado
