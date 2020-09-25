@@ -10,12 +10,12 @@
 - Para iniciar a API é só colocar o seguinte comando no bash `npm start`
 - instalar e pesquisar o postman
 ## Node e npm
-- **NPM:** Gerenciador de pacotes do Node.js, é utilizado para gerenciar pacotes, dentro de um ambiente de desenvolvimento por exemplo ele controla as dependências, dentro do package json são informados as dependências que ele deve instalar no projeto. Evitando dessa forma, o commit de componentes externos ao seu projeto para o seu repositório git exemplificando. 
-- **Node.js:** é um runtime que permite a execução de código JavaScript fora dos navegadores. Pode ser usado dentro de outras aplicações ou mesmo sozinho. Ele é um ambiente que funciona como uma máquina virtual para a execução do scripts JS.
+- **NPM:** Gerenciador de pacotes do Node.js, é utilizado para gerenciar pacotes dentro de um ambiente de desenvolvimento, por exemplo ele controla as dependências, dentro do `package.json` são informados as dependências que ele deve instalar no projeto a partir do `npm install`.   
+- **Node.js:** é um "runtime" que permite a execução de código JavaScript fora dos navegadores. Pode ser usado dentro de outras aplicações ou mesmo sozinho. Ele é um ambiente que funciona como uma máquina virtual para a execução do scripts JS.
 
 ## Comandos Angular CLI
 - Para a criação de:
-    - Componentes: ng g component/template/nome-do-componente
+    - Componentes: ng g c component/template/nome-do-componente
     - Diretiva (Directive): ng g directive nome-da-diretiva
     - Filtro (Pipe): ng g pipe nome-do-filtro
     - Serviço (Service): ng g service nome-do-servico
@@ -77,3 +77,6 @@
 ### Baixar components
 - Para baixar uma lista de components usamos o `ng add @angular/material`. Nesta instalação ele vai perguntar o esquemas de cores que vamos utilizar. Geralmente usa-se o 1. Depois ele pergunta se é para aplicar a tipografia de forma global no projeto, e depois pergunta sobre as animações. Para ambas eu coloquei sim.
 - Após a instalação, digitar o comando `npm start`
+
+## Perguntas. 
+- Para que serve esse modulo MatToobarModule?
