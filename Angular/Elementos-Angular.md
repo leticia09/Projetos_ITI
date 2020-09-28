@@ -8,7 +8,7 @@
 - Altera a aparência (CSS) e o comportamento de um elemento (JS), componente ou outra diretiva.
 - Para criar uma diretiva:
 ```ts
-// Esse @ é um decotator, tem como obj, evitar herança com composição
+// Esse @ é um decorator, tem como obj, evitar herança com composição
 @Directive({
     seletor: '[appRed]'
 })
