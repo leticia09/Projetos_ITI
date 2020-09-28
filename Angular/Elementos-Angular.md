@@ -24,15 +24,14 @@ export class RedDirective {
 ```
 
 ```html
-<i class="material-icons v-moddle" appRed> favorite </i>
+<i class="material-icons v-middle" appRed> favorite </i>
 ```
-- Pergunta: Confirma se é isso mesmo.. na tag vai ter o atributo, e para mudar na diretiva usamos o seletor com o nome do atributo, independente da classe descrita?
 
 ### Structural Directives
 - Altera o layout (estrutura da página HTML) adicionando e removendo elementos da DOM. A difereça da diretiva de atributo para estrutural é o * na frente.Ex: 
 ```html
 <form *ngIf="product" class="product-form"></form>
-<!-- nesse caso, vai exibir ou não o produto estiver definido -->
+<!-- nesse caso, vai exibir ou não o produto estiver se definido -->
 ```
 
 ```html
@@ -64,7 +63,7 @@ export class RedDirective {
 ```html
 <button mat-raised-button
 (click)="createProduct()"
-color="primary"> Salvar</button>
+color="primary">Salvar</button>
 ```
 ```ts
 @Component {{
@@ -88,7 +87,7 @@ export class ProductReadComponent
 nome: string;
 ```
 ### Two Way Data Binding
-- Alteração do HTML e TS será nas duas direções, ou seja, se aterei uma variável nome no ts, automaticamente será alterado no HTML e vice-versa. Ex:
+- Alteração do HTML e TS será nas duas direções, ou seja, se alterar uma variável nome no ts, automaticamente será alterado no HTML e vice-versa. Ex:
 ```html
 <input [(ngModel)]="nome"></input>
 ```
@@ -101,33 +100,42 @@ nome: string;
 <a routerLink="/products">Produtos</a>
 ```
 ```ts
-const routes: Routes = [{
-    path:"products",
-    component: ProductCrudComponent}, 
-    path: "products/crate",
-    component: ProductCrudComponent
-}]
+const routes: Routes = [
+    {
+        path:"products",
+        component: ProductCrudComponent
+    }, 
+    {
+        path: "products/criate",
+        component: ProductCrudComponent
+    }
+]
 ```
+
 ```html
 <mat-sedenav-content>
     <router-outlet></router-outlet>
 </mat-sedenav-content>
 ```
+
 ## Pipes
-- São processamentos feitos em variáveis, ou seja, irá interpretar o valor que está dentro dos {{}}. Ex: 
+- São processamentos feitos em variáveis, ou seja, irá interpretar o valor que está dentro dos `{{ }}`. Ex: 
+
 ```HTML
 <p>
 O vencimento é 
 {{produto.vencimento | date }}
 </p>
 ```
-> OBS: O | tem a função de alterar o formato, ou seja, a formatação. No exemplo acima, o valor recebido, poderia vir na forma 09062001, e o | data transforma em 09/06/2001. O mesmo pode acontecer com o | currency: 'BRL'. É possível ter uma cadeia de |. Ex: 
+
+> OBS: O `|` tem a função de alterar o formato, ou seja, a formatação. No exemplo acima, o valor recebido, poderia vir na forma 09062001, e o `| data` transforma em 09/06/2001. O mesmo pode acontecer com o `| currency: 'BRL'` . É possível ter uma cadeia de `|`. Ex:
+
 ```html
 O vencimento é {{produto.vencimento | date:'fullDate' | uppercase}}
 ```
 
 ## Observables
-- A partir do JS, começamos a trabalhar com o conceito de reatividade através de que tenhamos a oportunidade de passar uma função com o parâmetro para outra função, e essas funções são chamas de `callbacks`. Com o uso do `callbacks` surgiu o `Promises`, que tem a capacidade de encadear várias chamadas, um dos problemas é que o `Promises` é executada apenas uma vez. Com a evolução dos `callbacks` e `Promises` veio o `Observables`, que é reusável, consegue lidar com o stream de dados, ex: votação, e os operadores, que são funções que já existem nos `Observables` que ajudam a processar os dados que está observando.Ex: 
+- A partir do JS, começamos a trabalhar com o conceito de reatividade para que tenhamos a oportunidade de passar uma função com o parâmetro para outra função, e essas funções são chamas de `callbacks`. Com o uso do `callbacks` surgiu o `Promises`, que tem a capacidade de encadear várias chamadas, um dos problemas é que o `Promises` é executada apenas uma vez. Com a evolução dos `callbacks` e `Promises` veio o `Observables`, que é reusável, consegue lidar com o stream de dados, ex: votação, e os operadores, que são funções que já existem nos `Observables` que ajudam a processar os dados que está observando. Ex: 
 ```ts
 
 criarNoBackend(produto: Produto): Obervable<Produto>{
@@ -136,7 +144,7 @@ criarNoBackend(produto: Produto): Obervable<Produto>{
 
 criarProduto(): void {
     this.criarNoBackend(this.produto).subscribe( () => {
-        this.exibirMensagem("Salvo")
+        this.exibirMensagem("Salvo");
     });
 }
 ```
@@ -146,7 +154,7 @@ criarProduto(): void {
 ```ts
 import { Observable } from "rxjs";
 ```
-> OBS: o paradrão de projeto mais utilizado na WEB é o Observer
+> OBS: o padrão de projeto mais utilizado na WEB é o Observer
 ### Padrão Observer
 - Padrão orientado a Evento. Existe um Subject, que é quem tem a capacidade de monitorar e detectar quando o evento acontece. Existe também os Observer, que são os códigos que estão interessadas no evento, cada Observer precisa ser registrado no Subject. O observador está interessado em saber sobre o evento que o Subject monitora.
 

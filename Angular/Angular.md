@@ -20,6 +20,7 @@
     - Filtro (Pipe): ng g pipe nome-do-filtro
     - Serviço (Service): ng g service nome-do-servico
     - Módulo (Module): ng g module nome-do-modulo
+    - o ng é o apelido de Angular
 > OBS: Para conhecer mais comandos do Angular CLI, clique [aqui](http://www.macoratti.net/18/04/ang_angcli1.htm)
 
 ## Gitignore
