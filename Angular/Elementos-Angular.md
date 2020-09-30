@@ -159,3 +159,25 @@ import { Observable } from "rxjs";
 - Padrão orientado a Evento. Existe um Subject, que é quem tem a capacidade de monitorar e detectar quando o evento acontece. Existe também os Observer, que são os códigos que estão interessadas no evento, cada Observer precisa ser registrado no Subject. O observador está interessado em saber sobre o evento que o Subject monitora.
 
 ## Services
+
+- Services são classes que têm como principal objetivo tanto organizar quanto compartilhar códigos, métodos e dados (membros de uma classe) entre componentes, diretivas, etc... O objetivo é viabilizar a comunição entre componentes.
+- Um exemplo claro é: existem 2 componentes com lógicas visuais diferentes Y, mas também tem lógicas iguais X. O service vai "guardar" essa lógica X e compartilhar entre os componentes. 
+
+> OBS: Para estar dentro do Service, não necessáriamente precisa ser um conjuto de lógicas iguais usadas em vários componentes. O objetivo é guardar um conjunto coerente de responsabilidades, independente se é usado um mais de um componente. Ex: adicionar, excluir, editar um produto. Todas essas funções podem estar dentro de um Service.
+
+- Para criar um Service, o comando é `ng g s services/local`.
+- A definição de uma classe que representa um Service: 
+```ts
+@Injectable({
+    providedIn: "root",
+})
+export class ProductService {
+    //...
+}
+```
+- O `@Injectable` é um decorator, que permite que essa classe seja injetável em outras classes.
+- O `providedIn` está dizendo que existe um injetor que é o `root` (AppModule), ou seja, é um injetor raiz da aplicação. Isso significa que vai existir apenas uma instância do `ProductService` em toda aplicação. Sempre que for injetado, o angular vai devolver a mesma istância.
+
+### Injeção de Dependência
+- É um padão no qual a classe recebe as dependências de uma fonte externa ao invés de criar por conta própria.
+- Os Services são **singletons** dentro do escopo de um **injector**

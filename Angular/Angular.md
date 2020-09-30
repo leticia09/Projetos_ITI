@@ -80,4 +80,4 @@
 - Após a instalação, digitar o comando `npm start`
 
 ## Perguntas. 
-- Para que serve esse modulo MatToobarModule?
+- Para que serve esse modulo MatToobarModule

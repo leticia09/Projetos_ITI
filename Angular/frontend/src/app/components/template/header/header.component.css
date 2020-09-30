@@ -1,7 +1,8 @@
 .header{
     display: flex;
     align-items: center;
-    
+    background-color: rgba(0, 0, 0, 0.04);
+    height: 10%;    
 }
 .header a {
     display: flex;
@@ -9,9 +10,9 @@
     text-decoration: none;
 }
 .header .logo{
-    max-height: 32px;
+    max-height: 62px;
 }
 .header .title-group{
-    padding-left: 25px;
+    padding-left: 70px;
     padding-right: 5px;
 }
