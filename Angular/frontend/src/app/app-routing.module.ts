@@ -3,13 +3,22 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { HomeComponent } from './views/home/home.component'
 import { ProductCrudComponent } from './views/product-crud/product-crud.component'
+// Existe um plug que já instalei que faz o import direto. Só digitar direto no path
+import {ProductCreateComponent} from './components/product/product-create/product-create.component'
+//import { from } from 'rxjs';
+
 
 const routes: Routes = [{
   path: "",
   component: HomeComponent
-}, {
+},
+{
   path: "products",
   component: ProductCrudComponent
+},
+{
+  path: "products/create",
+  component: ProductCreateComponent
 }
 ];
 

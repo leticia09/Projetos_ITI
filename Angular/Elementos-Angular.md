@@ -106,7 +106,7 @@ const routes: Routes = [
         component: ProductCrudComponent
     }, 
     {
-        path: "products/criate",
+        path: "products/create",
         component: ProductCrudComponent
     }
 ]
@@ -163,7 +163,7 @@ import { Observable } from "rxjs";
 - Services são classes que têm como principal objetivo tanto organizar quanto compartilhar códigos, métodos e dados (membros de uma classe) entre componentes, diretivas, etc... O objetivo é viabilizar a comunição entre componentes.
 - Um exemplo claro é: existem 2 componentes com lógicas visuais diferentes Y, mas também tem lógicas iguais X. O service vai "guardar" essa lógica X e compartilhar entre os componentes. 
 
-> OBS: Para estar dentro do Service, não necessáriamente precisa ser um conjuto de lógicas iguais usadas em vários componentes. O objetivo é guardar um conjunto coerente de responsabilidades, independente se é usado um mais de um componente. Ex: adicionar, excluir, editar um produto. Todas essas funções podem estar dentro de um Service.
+> OBS: Para estar dentro do Service, não necessáriamente precisa ser um conjuto de lógicas iguais usadas em vários componentes. O objetivo é guardar um conjunto coerente de responsabilidades, independente se é usado em mais de um componente. Ex: adicionar, excluir, editar um produto. Todas essas funções podem estar dentro de um Service.
 
 - Para criar um Service, o comando é `ng g s services/local`.
 - A definição de uma classe que representa um Service: 
