@@ -4,13 +4,13 @@ import { Directive, Input, OnInit, TemplateRef, ViewContainerRef } from '@angula
 @Directive({
   selector: '[myFor]'
 })
-export class ForDirective implements OnInit {
+export class ForDirective  {
 
-  @Input('myForEm') numbers: number[];
+@Input('myForEm') numbers: number[];
 
   constructor(
-    private container: ViewContainerRef, 
-    private template: TemplateRef<any>
+     private container: ViewContainerRef, 
+     private template: TemplateRef<any>
   ){
     //não aparece o console
     // console.log('MyFor');
