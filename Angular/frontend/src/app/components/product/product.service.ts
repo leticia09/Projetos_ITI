@@ -1,11 +1,12 @@
 import { Product } from './product.model';
 import { ProductCreateComponent } from './product-create/product-create.component';
-import { HttpClientModule } from '@angular/common';
+//import { HttpClientModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 //import { ProductService } from './product.service';
 import { Injectable } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Observable } from 'rxjs';
+import { url } from 'inspector';
 
 // esse decorate está dizendo que essa classr pode ser injetada em outras classes
 @Injectable({
@@ -34,4 +35,16 @@ export class ProductService {
   read(): Observable<Product[]>{
     return this.http.get<Product[]>(this.baseUrl)
   }
+
+  readById(id:string): Observable<Product> {
+    const url = `${this.baseUrl}/${id}`
+    return this.http.get<Product>(url)
+  }
+
+  update(product: Product): Observable<Product> {
+    const url = `${this.baseUrl}/${product.id}`
+    return this.http.put<Product>(url, product)
+  }
+
+
 }

@@ -19,6 +19,16 @@
       "name": "xiaomi mi 9",
       "price": "1000.99",
       "id": 4
+    },
+    {
+      "name": "notebook samsung ",
+      "price": "3000",
+      "id": 5
+    },
+    {
+      "name": "Arroz",
+      "price": "30",
+      "id": 6
     }
   ]
 }

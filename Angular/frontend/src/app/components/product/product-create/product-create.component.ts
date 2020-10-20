@@ -10,20 +10,24 @@ import { Router } from '@angular/router';
 })
 export class ProductCreateComponent implements OnInit {
 
+  //product: Product;
+ 
   product: Product = {
     name: "",
-    price: null
+    price: null,
+    id: null
   }
+
   //atributoLegal = "qualquer";
 
-  constructor(private ProductService: ProductService, private router: Router) { }
+  constructor(private productService: ProductService, private router: Router) { }
 
   ngOnInit(): void {
   }
 
   createPodruct(): void {
-    this.ProductService.create(this.product).subscribe(() => {
-      this.ProductService.showMessage('Produto criado com sucesso!');
+    this.productService.create(this.product).subscribe(() => {
+      this.productService.showMessage('Produto criado com sucesso!');
       this.router.navigate(['/products']);
     })
    
