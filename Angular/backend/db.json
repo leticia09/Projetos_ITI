@@ -16,19 +16,29 @@
       "price": 5000.89
     },
     {
-      "name": "xiaomi mi 9",
+      "name": "Xiaomi MI 9",
       "price": "1000.99",
       "id": 4
     },
     {
-      "name": "notebook samsung ",
-      "price": "3000",
+      "name": "Notebook Samsung ",
+      "price": "1214.76",
       "id": 5
     },
     {
-      "name": "Arroz",
-      "price": "30",
+      "name": "Notebook DELL",
+      "price": "2500.99",
       "id": 6
+    },
+    {
+      "name": "Iphone 11 Pro Max",
+      "price": "4000",
+      "id": 7
+    },
+    {
+      "name": "Ipad 5",
+      "price": "1249.99",
+      "id": 8
     }
   ]
 }

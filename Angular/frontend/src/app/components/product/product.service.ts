@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Observable } from 'rxjs';
-import { url } from 'inspector';
+//import { url } from 'inspector';
 
 // esse decorate está dizendo que essa classr pode ser injetada em outras classes
 @Injectable({
@@ -27,23 +27,28 @@ export class ProductService {
 
   }
 
-  create(product: Product): Observable<Product>{
+  create(product: Product): Observable<Product> {
     // essa função vai adicionar um produto no backend, vai interagir com o backend
     return this.http.post<Product>(this.baseUrl, product)
   }
 
-  read(): Observable<Product[]>{
-    return this.http.get<Product[]>(this.baseUrl)
+  read(): Observable<Product[]> {
+    return this.http.get<Product[]>(this.baseUrl);
   }
 
-  readById(id:string): Observable<Product> {
-    const url = `${this.baseUrl}/${id}`
-    return this.http.get<Product>(url)
+  readById(id: string): Observable<Product> {
+    const url = `${this.baseUrl}/${id}`;
+    return this.http.get<Product>(url);
   }
 
   update(product: Product): Observable<Product> {
-    const url = `${this.baseUrl}/${product.id}`
-    return this.http.put<Product>(url, product)
+    const url = `${this.baseUrl}/${product.id}`;
+    return this.http.put<Product>(url, product);
+  }
+
+  delete(id: string): Observable<Product> {
+    const url = `${this.baseUrl}/${id}`;
+    return this.http.delete<Product>(url);
   }
 
 
