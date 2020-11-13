@@ -2,8 +2,8 @@
   "products": [
     {
       "id": 1,
-      "name": "Notebook Pro",
-      "price": 1500.89
+      "name": "Leticia",
+      "price": "10000000000000000000"
     },
     {
       "id": 2,
@@ -29,16 +29,6 @@
       "name": "Notebook DELL",
       "price": "2500.99",
       "id": 6
-    },
-    {
-      "name": "Iphone 11 Pro Max",
-      "price": "4000",
-      "id": 7
-    },
-    {
-      "name": "Ipad 5",
-      "price": "1249.99",
-      "id": 8
     }
   ]
 }

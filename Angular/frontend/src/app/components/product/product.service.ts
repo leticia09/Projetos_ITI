@@ -24,8 +24,10 @@ export class ProductService {
       duration: 3000,
       horizontalPosition: "right",
       verticalPosition: "top",
-      panelClass: isError ? ['msg-erro'] : ['msg=sucess']
+      panelClass: isError ? ['msg-error'] : ['msg-sucess']
     });
+    console.log(isError);
+    
 
   }
 
