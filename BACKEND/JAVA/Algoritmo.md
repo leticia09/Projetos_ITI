@@ -281,3 +281,146 @@ public void setPrice(double price){
 - São classes equivalentes aos tipos primitivos; 
 - Boxing e unboxin é natural na linguagem;
 - Uso comum: campos de entidades em sistemas de informação. Pois tipos de referência (classes) aceitam valor null e usufruem dos recussos OO.
+
+# Laço for each
+- Sintaxe opcional e simplificada para percorrer coleções; 
+- Para cada objeto (apelido) contido no vetor vetor faça isso:
+- `for(tipo apelido : coleção){comandos}`
+
+# Listas 
+- É uma estrutura de dados homogênea, ordenada, inicia vazia, cada elemento ocupa um nó; 
+- Tipo: list. Classes que implementam: ArrayList, LinkedList, ..
+- Desvantagens: Acesso sequencial aos elementos;
+- Vantagem: Facilidade para se realizar inserções e deleções;
+- Comandos importantes: 
+	- Tamanho da lista: size();
+	- Inserir elementos na lista: add(obj), add(int, obj);
+	- Remover elementos na lista: remove(obj), remove(int), removeIf(Predicate);
+	- Encontrar posição de elemento: indexOf(obj), lastIndexOf(obj);
+	- Filtrar lista com base em predicado: `list<Integer> result = list.stream().filter(x -> x>4). collect(Collectors.toList());`; 
+	- Econtrar primeira ocorrência com base em predicado: `Integer result = list.stream().filter(x -> x>4).findFirst().orElse(null);`;
+
+# Matrizes 
+
+-  Em programação matriz é um arranjo (array) bidimensional;
+- A vantagem é o acesso imediato aos elementos pela sua posição;
+- A desvantagem é que o tamanho é fixo e é mais dificil realizar inserções e deleções. 
+
+
+# Date
+
+- Representa um instante;
+- Pacote java.util
+- Um objeto DATE internamente armazena:
+	- O número de milissegundos desde a meia noite do dia 1 de janeiro de 1970 GMT(UTC); 
+- Define formatos para conversão entre Date e String
+	- Classe: SimpleDateFormat;
+	- dd/MM/yyyy; 
+	- HH:mm:ss;
+
+- Padrão ISO 8601 e classe instant
+	- formato: yyyy-MM-ddTHH:mm:ssZ = 2021/01/18T11:20:09Z;
+	- `Date y3 = Date.from(instant.parse("2021/01/18T11:20:09Z"));`
+
+# Manipulando uma data com o Calendar 
+- Somando uma unidade de tempo
+```java
+	SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+
+		Date d = Date.from(Instant.parse("2018-06-25T15:40:07z")); 
+
+		System.out.println(sdf.format(d)); 
+
+		Calendar cal = Calendar.getInstance();
+		cal.setTime(d);
+		cal.add(Calendar.HOUR_OF_DAY, 4);
+		d = cal.getTime();
+
+		System.out.println(sdf.format(d));
+
+```
+
+# Obtendo uma unidade de tempo
+```java
+
+	SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+
+		Date d = Date.from(Instant.parse("2018-06-25T15:40:07z")); 
+
+		System.out.println(sdf.format(d)); 
+
+		Calendar cal = Calendar.getInstance();
+		cal.setTime(d);
+		int minutes = cal.get(Calendar.MINUTE);
+		int month = 1 + cal.get(Calendar.MONTH);
+
+		System.out.println("Minutos: " + minutes);
+		System.out.println("Mês: " + month);
+
+```
+
+# Enumeração
+
+- É um tipo especial que serve para especificar de forma literal um conjunto de constantes relacionadas;
+- Palavra chave em Java: enum;
+- As vantagens são melhor semântica, código mais legível e auxiliado pelo compilador. 
+
+- Conversão de String para enum: 
+	- `OrderStatus os1 = OrderStatus.DELEVERED;`
+	- `OrderStatus os2 = OrderStatus.valueOf("DELEVERED");`
+
+# Design 
+- Em um sistema orientado a objetos, de modo geral "tudo" é objeto;
+- Por questões de design tais como organização, flexibilidade, reuso, delegação, etc., há várias categorias de classes:
+	- Views (telas);
+	- Controllers;
+	- Entities;
+	- Services;
+	- Repositories.
+
+# Composição 
+- É o tipo de associação que permite que um objeto contenha outro;
+- Relação "tem-um" ou "tem vários";
+- As vantagens são organização, coesão, flexibilidade, reuso; 
+
+# Herança
+- É um tipo de assiciação quer permite que uma classe herde todos dados e comportamentos de outra classe;
+- As vantagens são: Reuso e polimorfismo; 
+- Sintaxe: `class A extends B`; 
+- A herança é uma associação entre classes e não entre objetos
+
+### Modificador de acesso protected
+- Em caso de uma variável dentro do objeto não possa ser public, mas é necessário usa-lá em outra classe, usamos o `protected`. 
+
+### Upcasting e Downcasting
+- Upcasting é o casting da subclasse para a superclasse. Uso comum é o polimorfismo; 
+- Downcasting é o casting da superclasse para a subclasse. Palavra instanceof. Uso comum em métodos que recebem parâmetros genéricos; 
+
+# Sobreposição, palavra super, anotação @Override
+- Sobreposição é uma implementação de um método (função) de uma superclasse na subclasse;
+- É fortemente recomendável usar a anotação @Override em um método sobrescrito pois facilita a leitura e compreensão código, é uma boa prática pois avisa ao compilador;
+
+- Palavra `super()` é possível chamar a implementação da superclasse usando a palavra super;
+
+# Classes e métodos final
+- Palavra chave `final` aplicada a: 
+	- Classe: evita que a classe seja herdada `public final class contaPoupanca`;
+	- Método: evita que o método sob seja sobreposto;
+- A utilização da palavra `final`. Dependendo da regra do negócio, às vezes é desejável garantir que uma classe não seja herdada, ou que um método não seja sobreposto. Geralmente convem acrescentar `final` em métodos sobrepostos, pois sobreposições múltiplas podem ser uma porta de entrada para inconsistências. A performance, atributos de uma classe final são analisados de forma mais rápida em tempo de execução. Ex: String. 
+	
+
+# Polimorfismo 
+- É o recurso que permite que várias variáveis de um mesmo tipo genérico possam apontar objetos de tipos específicos diferentes, tendo assim comportamentos diferentes conforme cada tipo específico. 
+- É importante entender que a associação do tipo específico com o tipo genérico é feita em tempo de execução; 
+- O compilador não sabe para qual tipo específico a chamada do método `saque()` está sendo feita (ele só sabe que são duas variáveis Conta)
+
+# Classes abstratas
+- São classes que não podem ser instanciadas; 
+- É uma forma de garantir herança total: Somente subclasses não abstratas podem ser instanciadas, mas nunca a superclasse abstrata;
+- Instanciar, quer dizer, atribuir valores para a classe determinada; 
+- Obs: na UML a notação da classe abstrata é em itálico; 
+
+# Métodos abstratos 
+- Não possuem implementação; 
+- Precisam ser abstratos quando a classe é genérica demais para conter implementação. Se uma classe possuir pelo menos um método abstrato, então essa classe também é abstrata;
+- Obs: na UML a notação da classe abstrata é em itálico;

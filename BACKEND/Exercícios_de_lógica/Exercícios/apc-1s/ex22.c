@@ -1,5 +1,6 @@
 /*
-Na sua função principal, utilizando a função de calculo de médias criada, leia os dados de todos os alunos, suas respectivas M notas e diga qual a média de cada um dos alunos.
+Na sua função principal, utilizando a função de calculo de médias criada, leia os
+dados de todos os alunos, suas respectivas M notas e diga qual a média de cada um dos alunos.
 */
 
 #include <stdio.h>
